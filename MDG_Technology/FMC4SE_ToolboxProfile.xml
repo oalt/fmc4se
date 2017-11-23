@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="F0F22964-4" name="FMC4SE" version="1.0" notes="FMC4SE"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="FMC4SE Allocation" notes="FMC4SE Allocation" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="FMC4SE::allocate(UML::Dependency)" type="" description="" unit="" values="" default="Allocation"/>
+					<Tag name="FMC4SE::deploy(UML::Dependency)" type="" description="" unit="" values="" default="Deploy"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="FMC4SECompositionalStructures" alias="FMC4SE Compositional Structures" notes="Elements for Architectural Views." bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="FMC4SE::agent(UML::Object)" type="" description="" unit="" values="" default="Component / Agent"/>
+					<Tag name="FMC4SE::human agent(UML::Actor)" type="" description="" unit="" values="" default="Actor / Human Agent"/>
+					<Tag name="FMC4SE::channel(UML::Port)" type="" description="" unit="" values="" default="Channel"/>
+					<Tag name="FMC4SE::storage(UML::Object)" type="" description="" unit="" values="" default="Object / Storage"/>
+					<Tag name="FMC4SE::access type(UML::Connector)" type="" description="" unit="" values="" default="Access Type Connection"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="FMC4SETypes" alias="FMC4SE Types" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="UML::Class" type="" description="" unit="" values="" default="Class"/>
+					<Tag name="UML::Composition" type="" description="" unit="" values="" default="Composition"/>
+					<Tag name="UML::Aggregation" type="" description="" unit="" values="" default="Aggregation"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

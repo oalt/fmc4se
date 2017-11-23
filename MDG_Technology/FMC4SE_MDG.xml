@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<MDG.Technology version="1.0"><Documentation id="FMC4SE" name="FMC4SE" version="1.0" notes="Fundamental Modeling Concept for Systems Engineering"/><UMLProfiles><UMLProfile profiletype="uml2">
+			<Documentation id="6CE7900F-A" name="FMC4SE" version="1.0" notes="FMC4SE"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="access type" alias="Access Type" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Connector">
+								<Property name="direction" value="Source -&gt; Destination"/>
+								<Property name="kind" value=""/>
+								<Property name="_lineStyle" value="orthogonalR"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="agent" alias="Component/Agent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAOKBdkuob7gefQEAADYFAAAHABEAc3RyLmRhdFVUDQAHlaIVWpWiFVqVohVa
+nVRNS8NAEH3XCv6H0F4sFDFR8QtPQfBgpNhCjyJtTANtUpJVEel/982kdZO2KaaE2a95O/Pm
+7ZAcU7xhgRAO5lzFSHCMI/zo2KL3lacznkf0OLintTEmPoHhmHF3t8IOuDfoq2/EGxPupjiB
+h+4fJsY7Tx4ZM8eQY8Rdm6tv5dBGT+MPkBJn8EVEpuddfkWENbNqPp83ZrSM8c4YRczDJT+b
+e9mIg6/KiB7Nsns4xxVjuJq/hwvcHMzhgVFDqm0YOWWemOtmbEQHYXKtmhzKI1AWokfBQTqi
+GQ+XmgiH6rzN52VVr2SKtHr7ni5HO9u7+yoJ8MEoht6FdvGYZlidrazsr+u0gFV80jvkLLUU
+PJxKd7XwpN1SRsn7/xdVrOqRTVG7XrsY699ItBXb1LZPv2QxxCaqq+i0xpSVF2SqvZOpzoJN
+6JmXummXxmuGITPkkL/R5htYDiOu5J8lWSaaoYPnVY4ObjXHdu377/vMK/xzrSZW/qelqDbi
+kvYLUEsBAhcLFAAAAAgA4oF2S6hvuB59AQAANgUAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5k
+YXRVVAUAB5WiFVpQSwUGAAAAAAEAAQA+AAAAswEAAAAA</Image>
+						<AppliesTo>
+							<Apply type="Object"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="Type" type="enumeration" description="" unit="" values="Standard,Software,Chain,Electronic,Mechanical" default="Standard"/>
+							<Tag name="Multiplicity" type="enumeration" description="" unit="" values="Single,Multiple" default="Single"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="allocate" alias="Allocate" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Dependency">
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="channel" alias="Channel" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAAyDdktc+U7DagEAAHgFAAAHABEAc3RyLmRhdFVUDQAHpqQVWqakFVqmpBVa
+tVPBSsNAFJxrBP8hpJcWBG3Bi6IXUTzWVuhRbKtNIE1rEoUi+XdnX7vdlzSxFZWwL5vd2Tfz
+Zl8yhHjGEi/wMecsQoJjHOFToocPPHE15vqMO1cIMCE2Qc6Y8utygwtLOJ9IvxGr45B7OfqC
+G/H0lF8h2uihs8Vb7C3zG4YlMuLbOMOJjC6je7tz6xjhldh7qsvwyDjjV8DZSqoOeM4oHXD+
+hnfGjAoCZulszlsnPOJT8SeXDAPqeRBkVWfxY+aMKwtmNnUdyj38I25X9WFKTvmY3ZwMkdzI
+hCdijpQcXbkHM7S2qvrrb7W7WHCYd6a6NOZszFksO1aXrrdPtoWgUzKuhDPhzlxVXleb5Te5
+TYX+Tu37WEydes0M7bdm1Xntf3An3ue4UY72cM5n3em6u51e65gnmtY+jzgzjhn2qWhrbT1o
+Vdz/r6qcPuvoLqbaGxeSsa7Kus7+rdqmmy/v7vO1ibHss+7uAl9QSwECFwsUAAAACAAMg3ZL
+XPlOw2oBAAB4BQAABwAJAAAAAAAAAAAAAIAAAAAAc3RyLmRhdFVUBQAHpqQVWlBLBQYAAAAA
+AQABAD4AAACgAQAAAAA=</Image>
+						<AppliesTo>
+							<Apply type="Port">
+								<Property name="isBehavior" value="false"/>
+								<Property name="isConjugated" value="false"/>
+								<Property name="isService" value="true"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="Type" type="enumeration" description="" unit="" values="ReadWrite,Request,Response,RequestResponse" default="ReadWrite"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="deploy" alias="Deploy" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Dependency">
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="human agent" alias="Actor/Human Agent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAIxyXUn8cO2LbQAAAKIAAAAHABEAc3RyLmRhdFVUDQAHJrAUWCawFFgmsBRY
+K2bIYEhkKGBIZVBgyAWyMhnyGHgZuBiqwSQnQzBQpoQhAEjmMYQDZVOAvAwGDQYjBk0Ga6ia
+IKBsMlA8EagmnSEHyNNgMGDQAWNDIAmiLYEkQocLQxFQdTmDH5AsAZpaBtQTDHeJBlxlLRAD
+AFBLAQIXCxQAAAAIAIxyXUn8cO2LbQAAAKIAAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0
+VVQFAAcmsBRYUEsFBgAAAAABAAEAPgAAAKMAAAAAAA==</Image>
+						<AppliesTo>
+							<Apply type="Actor"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="storage" alias="Object/Storage" metatype="FMC4SE Storage" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAGxyXUnCaenjhAEAAG4EAAAHABEAc3RyLmRhdFVUDQAH6q8UWOqvFFjqrxRY
+lVNNS8NAFJyrgv+hpJcWWtGC+EVPKih4KPbQY5Gm2lKTlCQqIvnvzrxNsq1abQn7Ntm3M2/e
+RzLM8Iglpmgg4tscMQ6wj0+ze/SOefrC82d6GuhzBZjwfoycNuXXZXl3yO8cA/ONiAj5NUML
+PbTrOw9I8Ep/yLcpeXL6j9CxdUy7up/U1uMHjCiNOTXFxAZ8vNfZOZ7ouaXuzO4nll9KzIch
+YnoingRkVzZiaJfYKu+Kqyj3KeNltN9veT0jvqmSihVanGYdqYkLi+SVVrx/4yeMqiwyy2lu
+WRyusHrGgkt7aFVNjCsnIrGu6SQis25oOf1ajfoRRhGkxWP7jDHETd3ldYyrtCYoI/vPSt/x
+/Nq0vOOq1JBYNpqde8t8wVvSF1s/AnpSToi6U3VlPeZv2v2TmXopWFoWmr+qRpsw6q0mfGkd
+bqGLM5u8Hs5puzaPHZxy35XJIR2P49yGJWI13qB/KTE1jmX1P9iEVOy4Rm6PU9fDHSqmKqvb
+CyL/Q7lJ1yrwBVBLAQIXCxQAAAAIAGxyXUnCaenjhAEAAG4EAAAHAAkAAAAAAAAAAAAAgAAA
+AABzdHIuZGF0VVQFAAfqrxRYUEsFBgAAAAABAAEAPgAAALoBAAAAAA==</Image>
+						<AppliesTo>
+							<Apply type="Object"/>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+				<QuickLink data="Port,channel,Port,channel,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Port,channel,Object,agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,,,,0,,TRUE,,,&#xA;Object,storage,Object,agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,TRUE,,,0,,TRUE,,,&#xA;Object,storage,Port,channel,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,,,,0,,,,,&#xA;Port,channel,Object,storage,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,,,,0,,,,,&#xA;"/>
+			</Content>
+		</UMLProfile>
+	</UMLProfiles><DiagramProfile><UMLProfile profiletype="uml2">
+			<Documentation id="14B9E5AE-A" name="FMC4SE" version="1.0" notes="FMC4SE"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="FMC4SE" alias="FMC Diagram" notes="FMC Diagram." bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Diagram_Object">
+								<Property name="alias" value="FMC4SE"/>
+								<Property name="pdata" value="HideStereo=0;HideEStereo=1;"/>
+								<Property name="styleex" value="HideConnStereotype=1;"/>
+								<Property name="diagramID" value="FMC"/>
+								<Property name="toolbox" value="FMC4SE"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+	</DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
+			<Documentation id="F0F22964-4" name="FMC4SE" version="1.0" notes="FMC4SE"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="FMC4SE Allocation" notes="FMC4SE Allocation" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="FMC4SE::allocate(UML::Dependency)" type="" description="" unit="" values="" default="Allocation"/>
+							<Tag name="FMC4SE::deploy(UML::Dependency)" type="" description="" unit="" values="" default="Deploy"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="FMC4SECompositionalStructures" alias="FMC4SE Compositional Structures" notes="Elements for Architectural Views." bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="FMC4SE::agent(UML::Object)" type="" description="" unit="" values="" default="Component / Agent"/>
+							<Tag name="FMC4SE::human agent(UML::Actor)" type="" description="" unit="" values="" default="Actor / Human Agent"/>
+							<Tag name="FMC4SE::channel(UML::Port)" type="" description="" unit="" values="" default="Channel"/>
+							<Tag name="FMC4SE::storage(UML::Object)" type="" description="" unit="" values="" default="Object / Storage"/>
+							<Tag name="FMC4SE::access type(UML::Connector)" type="" description="" unit="" values="" default="Access Type Connection"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="FMC4SETypes" alias="FMC4SE Types" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="UML::Class" type="" description="" unit="" values="" default="Class"/>
+							<Tag name="UML::Composition" type="" description="" unit="" values="" default="Composition"/>
+							<Tag name="UML::Aggregation" type="" description="" unit="" values="" default="Aggregation"/>
+						</TaggedValues>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+	</UIToolboxes></MDG.Technology>

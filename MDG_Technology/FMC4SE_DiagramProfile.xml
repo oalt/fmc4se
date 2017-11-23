@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="14B9E5AE-A" name="FMC4SE" version="1.0" notes="FMC4SE"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="FMC4SE" alias="FMC Diagram" notes="FMC Diagram." bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Object">
+						<Property name="alias" value="FMC4SE"/>
+						<Property name="pdata" value="HideStereo=0;HideEStereo=1;"/>
+						<Property name="styleex" value="HideConnStereotype=1;"/>
+						<Property name="diagramID" value="FMC"/>
+						<Property name="toolbox" value="FMC4SE"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>
