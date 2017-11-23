@@ -1,5 +1,5 @@
 # FMC4SE
-Fundamential Modeling Concept (FMC) for Systems Engineering
+Fundamental Modeling Concepts (FMC) for Systems Engineering
 
 FMC Modellierungsunterstützung für Sparx Systems Enterprise Architect. 
 
@@ -10,3 +10,8 @@ Hier finden Sie Modelle für Enterprise Architect mit FMC4SE Beispielen und der 
 
 ## MDG_Technology
 Hier finden Sie den aktuellen Stand der FMC4SE MDG Technology für Enterprise Architect. Diese können Sie direkt über "Resources" als MDG Technology in ihr Modell importieren und dann nutzen.
+
+##Resourcen
+* http://www.mdd4all.de
+* http://www.fmc-modeling.org/
+* https://de.wikipedia.org/wiki/Fundamental_Modeling_Concepts
