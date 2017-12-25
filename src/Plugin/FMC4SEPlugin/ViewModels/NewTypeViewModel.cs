@@ -37,9 +37,9 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 
 		public bool IsCanceled { get; set; }
 
-		public ICommand CancelCommand { get; }
+		public ICommand CancelCommand { get; private set; }
 
-		public ICommand OkCommand { get; }
+		public ICommand OkCommand { get; private set; }
 		
 		public void Cancel()
 		{

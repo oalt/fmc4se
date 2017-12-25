@@ -182,11 +182,11 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 
 		#region CommandDefinitions
 
-		public ICommand OkCommand { get; }
+		public ICommand OkCommand { get; private set; }
 
-		public ICommand CancelCommand { get; }
+		public ICommand CancelCommand { get; private set; }
 
-		public ICommand NewTypeCommand { get; }
+		public ICommand NewTypeCommand { get; private set; }
 		#endregion
 
 
