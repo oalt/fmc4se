@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?ifndef ProductVersion?>
+<?define ProductVersion=1.0.0.0?>
+<?endif ?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" 
+			 Name="FMC4SE Enterprie Achitect Plugin" 
+			 Language="1033" 
+			 Version="$(var.ProductVersion)" 
+			 Manufacturer="MDD4All.de" 
+			 UpgradeCode="8431E500-75C4-45E9-922D-FC172E212CD4">
+		
+		<Package InstallerVersion="200" 
+				 Compressed="yes" 
+				 InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<Media Id="1" Cabinet="fmc4eaPlugin.cab" EmbedCab="yes" />
+
+		<Condition Message="A later version of [ProductName] is already installed. Setup will now exit.">
+			NOT NEWERVERSIONDETECTED OR Installed
+		</Condition>
+
+    <Property Id="EADIRNAME">
+			<RegistrySearch Id="EARegistrySearch" Type="raw" Root="HKCU" Key="Software\Sparx Systems\EA400\EA" Name="Install Path" />
+		</Property>
+    
+		<PropertyRef Id="NETFRAMEWORK40FULL" />
+		<Condition Message="This setup requires the .NET Framework 4.0 to be installed.">
+			Installed OR NETFRAMEWORK40FULL
+		</Condition>
+
+   <Condition Message="This setup requires Enterprise Architect to be installed.">
+			EADIRNAME OR REMOVE
+		</Condition>
+		
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="Mdd4AllDir" Name="MDD4All">
+					<Directory Id="INSTALLLOCATION" Name="FMC4SE Plugin">
+            <Component Id="RegisterAddin" Guid="8909CEFB-DC63-444A-BAD5-7260EE9AD535">
+              <RegistryKey Root ="HKCU" Key ="Software\Sparx Systems\EAAddins\FMC4SE" Action="createAndRemoveOnUninstall">
+                <RegistryValue Value ="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" Type ="string" />
+              </RegistryKey>
+            </Component>
+						<?include Plugin.wxi ?>
+            <?include Components.wxi ?>
+					</Directory>
+				</Directory>
+			</Directory>
+		</Directory>
+
+		
+		<Feature Id="ProductFeature" Title="FMC4SESetup" Level="1">
+			<ComponentRef Id="FMC4SEComponents" />
+      <ComponentRef Id="fmc4sePlugin" />
+      <ComponentRef Id="RegisterAddin" />
+		</Feature>
+
+		<Icon Id="FMC4SEIcon" SourceFile="fmc4se.ico"/>
+		
+		<Property Id="ARPPRODUCTICON" Value="FMC4SEIcon" />
+
+	</Product>
+	
+</Wix>

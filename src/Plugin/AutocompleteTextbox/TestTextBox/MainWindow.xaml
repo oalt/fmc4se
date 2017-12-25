@@ -1,0 +1,39 @@
+﻿<Window x:Class="TestTextBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTextBox"
+        xmlns:editors1="clr-namespace:Autocomplete.WPF.Editors;assembly=Autocomplete.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+		<Grid.Resources>
+			<local:NameSuggestionProvider x:Key="fsp" />
+		</Grid.Resources>
+		<editors1:AutoCompleteTextBox VerticalAlignment="Top"
+                                 Height="25"
+                                
+                                 
+                                
+                                 Watermark="Search here"
+                                 IconPlacement="Left"
+                                 IconVisibility="Visible"
+                                 Provider="{StaticResource ResourceKey=fsp}"
+                                 x:Name="Actb">
+			
+			<editors1:AutoCompleteTextBox.LoadingContent>
+				<TextBlock Text="Loading..."
+                           Margin="5"
+                           FontSize="14" />
+			</editors1:AutoCompleteTextBox.LoadingContent>
+			<editors1:AutoCompleteTextBox.SelectedItem>
+				<Binding Path="Text" Mode="TwoWay">
+					
+				</Binding>
+			</editors1:AutoCompleteTextBox.SelectedItem>
+
+		</editors1:AutoCompleteTextBox>
+	</Grid>
+</Window>
+

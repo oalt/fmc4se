@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<SolutionName>FMC4SEPlugin</SolutionName>
+	</PropertyGroup>
+	
+	<Target Name="Build">
+		<Message Text="Building solution $(SolutionName) $(Configuration)" />
+		<MSBuild Projects="$(SolutionName).sln" Targets="Build" Properties="Configuration=$(Configuration)"/>
+	</Target>
+	
+</Project>

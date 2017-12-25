@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+	<Component Id="FMC4SEComponents" Guid ="9D62CF3C-4325-42D9-8CA3-57DBA131D44E">	
+				
+		<File Id="MDD4All.EnterpriseArchitect.ManipulationsDLL" Name ="MDD4All.EnterpriseArchitect.Manipulations.dll" Source='$(var.FMC4SEPlugin.TargetDir)MDD4All.EnterpriseArchitect.Manipulations.dll'/>
+    
+    <File Id="Autocomplete.WPFDLL" Name ="Autocomplete.WPF.dll" Source='$(var.FMC4SEPlugin.TargetDir)Autocomplete.WPF.dll'/>
+    
+    <File Id="GalaSoft.MvvmLightDLL" Name ="GalaSoft.MvvmLight.dll" Source='$(var.FMC4SEPlugin.TargetDir)GalaSoft.MvvmLight.dll'/>
+    <File Id="GalaSoft.MvvmLight.ExtrasDLL" Name ="GalaSoft.MvvmLight.Extras.dll" Source='$(var.FMC4SEPlugin.TargetDir)GalaSoft.MvvmLight.Extras.dll'/>
+    <File Id="Microsoft.Practices.ServiceLocationDLL" Name ="Microsoft.Practices.ServiceLocation.dll" Source='$(var.FMC4SEPlugin.TargetDir)Microsoft.Practices.ServiceLocation.dll'/>
+    <File Id="System.Windows.InteractivityDLL" Name ="System.Windows.Interactivity.dll" Source='$(var.FMC4SEPlugin.TargetDir)System.Windows.Interactivity.dll'/>
+
+
+
+    <CopyFile Id="CopyInteropEA_DLL" DestinationProperty="INSTALLLOCATION" SourceProperty="EADIRNAME" SourceName="Interop.EA.dll" Delete="no" />
+    <RemoveFile Id="RemoveInteropEAdll" Name="Interop.EA.dll" On="uninstall" />
+    <RemoveFile Id="PurgeAppFolder" Name="*.*" On="uninstall" />
+  </Component>
+</Include>

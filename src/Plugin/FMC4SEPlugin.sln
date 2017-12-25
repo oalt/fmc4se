@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMC4SEPlugin", "FMC4SEPlugin\FMC4SEPlugin.csproj", "{71047907-200E-4704-BFEA-C27657EB033E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControls.CS", "AutocompleteTextbox\WpfControls.CS\WpfControls.CS.csproj", "{BB2ABB74-BA58-4812-83AA-EC8171F42DF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutocompleteTextbox", "AutocompleteTextbox", "{A8BE63C9-84A6-4DAE-8AEA-AD858153EF64}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Setup", "Setup\Setup.wixproj", "{89574CE9-ED4C-4872-BA7A-96B1C080A8A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CBADB21B-18EB-45B9-8FDA-AD5A857DBDA2}"
+	ProjectSection(SolutionItems) = preProject
+		build.xml = build.xml
+		version.txt = version.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71047907-200E-4704-BFEA-C27657EB033E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71047907-200E-4704-BFEA-C27657EB033E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71047907-200E-4704-BFEA-C27657EB033E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{71047907-200E-4704-BFEA-C27657EB033E}.Debug|x86.Build.0 = Debug|Any CPU
+		{71047907-200E-4704-BFEA-C27657EB033E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71047907-200E-4704-BFEA-C27657EB033E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71047907-200E-4704-BFEA-C27657EB033E}.Release|x86.ActiveCfg = Release|Any CPU
+		{71047907-200E-4704-BFEA-C27657EB033E}.Release|x86.Build.0 = Release|Any CPU
+		{BB2ABB74-BA58-4812-83AA-EC8171F42DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB2ABB74-BA58-4812-83AA-EC8171F42DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB2ABB74-BA58-4812-83AA-EC8171F42DF4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB2ABB74-BA58-4812-83AA-EC8171F42DF4}.Debug|x86.Build.0 = Debug|Any CPU
+		{BB2ABB74-BA58-4812-83AA-EC8171F42DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB2ABB74-BA58-4812-83AA-EC8171F42DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB2ABB74-BA58-4812-83AA-EC8171F42DF4}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB2ABB74-BA58-4812-83AA-EC8171F42DF4}.Release|x86.Build.0 = Release|Any CPU
+		{89574CE9-ED4C-4872-BA7A-96B1C080A8A4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{89574CE9-ED4C-4872-BA7A-96B1C080A8A4}.Debug|x86.ActiveCfg = Debug|x86
+		{89574CE9-ED4C-4872-BA7A-96B1C080A8A4}.Debug|x86.Build.0 = Debug|x86
+		{89574CE9-ED4C-4872-BA7A-96B1C080A8A4}.Release|Any CPU.ActiveCfg = Release|x86
+		{89574CE9-ED4C-4872-BA7A-96B1C080A8A4}.Release|x86.ActiveCfg = Release|x86
+		{89574CE9-ED4C-4872-BA7A-96B1C080A8A4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB2ABB74-BA58-4812-83AA-EC8171F42DF4} = {A8BE63C9-84A6-4DAE-8AEA-AD858153EF64}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A546411C-29ED-4553-98B0-56AFCE6D3FC6}
+	EndGlobalSection
+EndGlobal
