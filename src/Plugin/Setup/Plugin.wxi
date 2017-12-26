@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Include>
   <Component Id="fmc4sePlugin" Guid="FBDF9195-22AF-4E94-AE82-2BA3B81CF8B7">
-            <Class Id="{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" ThreadingModel="both" ForeignServer="mscoree.dll">
-            <ProgId Id="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" Description="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" />
-            </Class>
-            <Class Id="{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" ThreadingModel="both" ForeignServer="mscoree.dll">
-                <ProgId Id="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" Description="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" />
-            </Class>
-            <Class Id="{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" ThreadingModel="both" ForeignServer="mscoree.dll">
-                <ProgId Id="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" Description="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" />
-            </Class>
-            <Class Id="{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" ThreadingModel="both" ForeignServer="mscoree.dll">
-                <ProgId Id="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" Description="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" />
-            </Class>
-            <Class Id="{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" ThreadingModel="both" ForeignServer="mscoree.dll">
-                <ProgId Id="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" Description="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" />
-            </Class>
+    <Class Id="{02F055B6-635A-3C7B-81CE-C66E36051066}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" ThreadingModel="both" ForeignServer="mscoree.dll">
+      <ProgId Id="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" Description="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" />
+    </Class>
+    <Class Id="{A2019E1F-E8F8-3893-9C15-A706464F89EE}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" ThreadingModel="both" ForeignServer="mscoree.dll">
+      <ProgId Id="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" Description="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" />
+    </Class>
+    <Class Id="{B63C6BF8-A035-3249-9C45-3167792BFEAB}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" ThreadingModel="both" ForeignServer="mscoree.dll">
+      <ProgId Id="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" Description="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" />
+    </Class>
+    <Class Id="{BC512D83-CE13-3A2D-8376-65F27170E9E4}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" ThreadingModel="both" ForeignServer="mscoree.dll">
+      <ProgId Id="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" Description="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" />
+    </Class>
+    <Class Id="{DEB64093-CE26-369E-90B2-03012EED68E4}" Context="InprocServer32" Description="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" ThreadingModel="both" ForeignServer="mscoree.dll">
+      <ProgId Id="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" Description="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" />
+    </Class>
+    <File Id="filFBE47669B311DA914CEB0059FE0A1B88" KeyPath="yes" Name="MDD4All.FMC4SE.Plugin.dll" Source="$(var.FMC4SEPlugin.TargetDir)MDD4All.FMC4SE.Plugin.dll" />
+    <RegistryValue Root="HKCR" Key="CLSID\{02F055B6-635A-3C7B-81CE-C66E36051066}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{02F055B6-635A-3C7B-81CE-C66E36051066}\InprocServer32\2.0.0.13" Name="Class" Value="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{02F055B6-635A-3C7B-81CE-C66E36051066}\InprocServer32\2.0.0.13" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{02F055B6-635A-3C7B-81CE-C66E36051066}\InprocServer32\2.0.0.13" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{02F055B6-635A-3C7B-81CE-C66E36051066}\InprocServer32\2.0.0.13" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{02F055B6-635A-3C7B-81CE-C66E36051066}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{02F055B6-635A-3C7B-81CE-C66E36051066}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{02F055B6-635A-3C7B-81CE-C66E36051066}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{02F055B6-635A-3C7B-81CE-C66E36051066}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{A2019E1F-E8F8-3893-9C15-A706464F89EE}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{A2019E1F-E8F8-3893-9C15-A706464F89EE}\InprocServer32\2.0.0.13" Name="Class" Value="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{A2019E1F-E8F8-3893-9C15-A706464F89EE}\InprocServer32\2.0.0.13" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{A2019E1F-E8F8-3893-9C15-A706464F89EE}\InprocServer32\2.0.0.13" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{A2019E1F-E8F8-3893-9C15-A706464F89EE}\InprocServer32\2.0.0.13" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{A2019E1F-E8F8-3893-9C15-A706464F89EE}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{A2019E1F-E8F8-3893-9C15-A706464F89EE}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{A2019E1F-E8F8-3893-9C15-A706464F89EE}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{A2019E1F-E8F8-3893-9C15-A706464F89EE}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{B63C6BF8-A035-3249-9C45-3167792BFEAB}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{B63C6BF8-A035-3249-9C45-3167792BFEAB}\InprocServer32\2.0.0.13" Name="Class" Value="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{B63C6BF8-A035-3249-9C45-3167792BFEAB}\InprocServer32\2.0.0.13" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{B63C6BF8-A035-3249-9C45-3167792BFEAB}\InprocServer32\2.0.0.13" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{B63C6BF8-A035-3249-9C45-3167792BFEAB}\InprocServer32\2.0.0.13" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{B63C6BF8-A035-3249-9C45-3167792BFEAB}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{B63C6BF8-A035-3249-9C45-3167792BFEAB}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{B63C6BF8-A035-3249-9C45-3167792BFEAB}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{B63C6BF8-A035-3249-9C45-3167792BFEAB}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{BC512D83-CE13-3A2D-8376-65F27170E9E4}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{BC512D83-CE13-3A2D-8376-65F27170E9E4}\InprocServer32\2.0.0.13" Name="Class" Value="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{BC512D83-CE13-3A2D-8376-65F27170E9E4}\InprocServer32\2.0.0.13" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{BC512D83-CE13-3A2D-8376-65F27170E9E4}\InprocServer32\2.0.0.13" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{BC512D83-CE13-3A2D-8376-65F27170E9E4}\InprocServer32\2.0.0.13" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{BC512D83-CE13-3A2D-8376-65F27170E9E4}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{BC512D83-CE13-3A2D-8376-65F27170E9E4}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{BC512D83-CE13-3A2D-8376-65F27170E9E4}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{BC512D83-CE13-3A2D-8376-65F27170E9E4}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{DEB64093-CE26-369E-90B2-03012EED68E4}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{DEB64093-CE26-369E-90B2-03012EED68E4}\InprocServer32\2.0.0.13" Name="Class" Value="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{DEB64093-CE26-369E-90B2-03012EED68E4}\InprocServer32\2.0.0.13" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{DEB64093-CE26-369E-90B2-03012EED68E4}\InprocServer32\2.0.0.13" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{DEB64093-CE26-369E-90B2-03012EED68E4}\InprocServer32\2.0.0.13" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{DEB64093-CE26-369E-90B2-03012EED68E4}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{DEB64093-CE26-369E-90B2-03012EED68E4}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.13, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{DEB64093-CE26-369E-90B2-03012EED68E4}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+    <RegistryValue Root="HKCR" Key="CLSID\{DEB64093-CE26-369E-90B2-03012EED68E4}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />        
     
-            <File Id="filFBE47669B311DA914CEB0059FE0A1B88" KeyPath="yes" Name="MDD4All.FMC4SE.Plugin.dll" Source="$(var.FMC4SEPlugin.TargetDir)MDD4All.FMC4SE.Plugin.dll" />
     
-            <RegistryValue Root="HKCR" Key="CLSID\{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}\InprocServer32\2.0.0.9" Name="Class" Value="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}\InprocServer32\2.0.0.9" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}\InprocServer32\2.0.0.9" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}\InprocServer32\2.0.0.9" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.DataModels.TypeDataModel" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{14A3B2E2-EDAF-3820-8B5B-E1A8D1F0E9B0}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}\InprocServer32\2.0.0.9" Name="Class" Value="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}\InprocServer32\2.0.0.9" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}\InprocServer32\2.0.0.9" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}\InprocServer32\2.0.0.9" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.Views.NewTypeWindow" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{23F51550-EBEC-3B23-9A5E-49385AFFB0E6}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}\InprocServer32\2.0.0.9" Name="Class" Value="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}\InprocServer32\2.0.0.9" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}\InprocServer32\2.0.0.9" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}\InprocServer32\2.0.0.9" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.FMC4SEAssistantPlugin" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{428B4F7A-DA54-3D07-AB8E-31CCDE33E24B}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}\InprocServer32\2.0.0.9" Name="Class" Value="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}\InprocServer32\2.0.0.9" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}\InprocServer32\2.0.0.9" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}\InprocServer32\2.0.0.9" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.ViewModels.NewTypeViewModel" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{576FE3A4-4C71-32D6-A119-ABF0C78E6C75}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}\InprocServer32\2.0.0.9" Name="Class" Value="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}\InprocServer32\2.0.0.9" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}\InprocServer32\2.0.0.9" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}\InprocServer32\2.0.0.9" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}\InprocServer32" Name="Class" Value="MDD4All.FMC4SE.Plugin.Views.FMCElementPropertyWindow" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}\InprocServer32" Name="Assembly" Value="MDD4All.FMC4SE.Plugin, Version=2.0.0.9, Culture=neutral, PublicKeyToken=7775311d0fab0175" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
-            <RegistryValue Root="HKCR" Key="CLSID\{BB6850C0-CBBC-3A0C-BBAC-9EA072B52EA1}\InprocServer32" Name="CodeBase" Value="file:///[#filFBE47669B311DA914CEB0059FE0A1B88]" Type="string" Action="write" />
-      </Component>
+  </Component>
 </Include>
