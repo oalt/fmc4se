@@ -8,6 +8,7 @@
 	<Target Name="Build">
 		<Message Text="Building solution $(SolutionName) $(Configuration)" />
 		<MSBuild Projects="$(SolutionName).sln" Targets="Build" Properties="Configuration=$(Configuration)"/>
+    <Move SourceFiles="./Setup/bin/Release/FMC4SE-Plugin-Setup.msi" DestinationFiles="./Setup/bin/Release/FMC4SE-Plugin-Setup_$(ProductVersion).msi" /> 
 	</Target>
 	
 </Project>
