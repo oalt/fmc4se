@@ -85,10 +85,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SuggestionProviders\ChannelTypeSuggestionProvider.cs" />
     <Compile Include="SuggestionProviders\TypeSuggestionProvider.cs" />
+    <Compile Include="ViewModels\AboutBoxViewModel.cs" />
     <Compile Include="ViewModels\ChannelPropertyViewModel.cs" />
     <Compile Include="ViewModels\AgentPropertyViewModel.cs" />
     <Compile Include="ViewModels\NewTypeViewModel.cs" />
     <Compile Include="ViewModels\PropertyViewModel.cs" />
+    <Compile Include="Views\AboutBox.xaml.cs">
+      <DependentUpon>AboutBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\FMCElementPropertyWindow.xaml.cs">
       <DependentUpon>FMCElementPropertyWindow.xaml</DependentUpon>
     </Compile>
@@ -96,8 +100,11 @@
       <DependentUpon>NewTypeWindow.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Page Include="Views\AboutBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\FMCElementPropertyWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,6 +124,9 @@
       <Project>{bb2abb74-ba58-4812-83aa-ec8171f42df4}</Project>
       <Name>WpfControls.CS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\fmc4se.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
