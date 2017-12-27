@@ -45,6 +45,7 @@
             </Component>
 						<?include Plugin.wxi ?>
             <?include Components.wxi ?>
+            <?include MDG.wxi ?>
 					</Directory>
 				</Directory>
 			</Directory>
@@ -54,6 +55,7 @@
 		<Feature Id="ProductFeature" Title="FMC4SESetup" Level="1">
 			<ComponentRef Id="FMC4SEComponents" />
       <ComponentRef Id="fmc4sePlugin" />
+      <ComponentRef Id="MDG"  />
       <ComponentRef Id="RegisterAddin" />
 		</Feature>
 

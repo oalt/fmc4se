@@ -35,6 +35,7 @@
   <ItemGroup>
     <Content Include="Components.wxi" />
     <Content Include="fmc4se.ico" />
+    <Content Include="MDG.wxi" />
     <Content Include="Plugin.wxi" />
   </ItemGroup>
   <ItemGroup>
