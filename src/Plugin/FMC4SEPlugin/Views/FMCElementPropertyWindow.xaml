@@ -96,6 +96,7 @@
 				 Grid.Column="1"
 				 VerticalAlignment="Stretch"
 				 HorizontalAlignment="Stretch"
+                 TextWrapping="Wrap"
 				 Margin="5"
 				 Text="{Binding Notes}"/>
 		
