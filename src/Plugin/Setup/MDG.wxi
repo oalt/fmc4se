@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Include>
+<Include xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
   <Component Id="MDG" Guid="C1E07FC8-51A1-4E52-AB2F-35FA5AD921B1">
     <File Id="FMC4SE_MDG" 
           Name ="FMC4SE_MDG.xml" 
@@ -7,7 +7,9 @@
 
     <File Id="ExampleModel"
           Name ="FMC4EA.eap"
-          Source="../../../Models/FMC4EA.EAP"/>
+          Source="../../../Models/FMC4EA.EAP">
+      <util:PermissionEx User="Users" GenericAll="yes"/>
+    </File>
     
   </Component>
 </Include>
