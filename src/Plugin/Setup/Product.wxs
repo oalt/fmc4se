@@ -2,7 +2,8 @@
 <?ifndef ProductVersion?>
 <?define ProductVersion=1.0.0.0?>
 <?endif ?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
 	<Product Id="*" 
 			 Name="FMC4SE Enterprie Achitect Plugin" 
 			 Language="1033" 
@@ -51,6 +52,11 @@
       <Directory Id="CommonAppDataFolder" Name="CommonAppData">
           <Directory Id="MDD4AllAppData" Name="MDD4All">
               <Directory Id="FMC4SEAppDataFolder" Name="FMC4SE">
+                <Component Id ="PermissionFMC4SEAppDataFolder" Guid="014B23C3-AC5C-4FBD-BE47-31E11AE1D40D">
+                     <CreateFolder>
+                        <util:PermissionEx User="Users" GenericAll="yes" />
+                     </CreateFolder>
+                </Component>
                 <?include MDG.wxi ?>
               </Directory>
           </Directory>
