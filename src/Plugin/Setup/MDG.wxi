@@ -4,5 +4,10 @@
     <File Id="FMC4SE_MDG" 
           Name ="FMC4SE_MDG.xml" 
           Source="../../../MDG_Technology/FMC4SE_MDG.xml"/>
+
+    <File Id="ExampleModel"
+          Name ="FMC4EA.eap"
+          Source="../../../Models/FMC4EA.EAP"/>
+    
   </Component>
 </Include>

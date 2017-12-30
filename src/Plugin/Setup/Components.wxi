@@ -11,7 +11,9 @@
     <File Id="Microsoft.Practices.ServiceLocationDLL" Name ="Microsoft.Practices.ServiceLocation.dll" Source='$(var.FMC4SEPlugin.TargetDir)Microsoft.Practices.ServiceLocation.dll'/>
     <File Id="System.Windows.InteractivityDLL" Name ="System.Windows.Interactivity.dll" Source='$(var.FMC4SEPlugin.TargetDir)System.Windows.Interactivity.dll'/>
 
-
+    <File Id="License"
+          Name ="LICENSE"
+          Source="../../../LICENSE"/>
 
     <CopyFile Id="CopyInteropEA_DLL" DestinationProperty="INSTALLLOCATION" SourceProperty="EADIRNAME" SourceName="Interop.EA.dll" Delete="no" />
     <RemoveFile Id="RemoveInteropEAdll" Name="Interop.EA.dll" On="uninstall" />

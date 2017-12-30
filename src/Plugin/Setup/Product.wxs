@@ -45,10 +45,17 @@
             </Component>
 						<?include Plugin.wxi ?>
             <?include Components.wxi ?>
-            <?include MDG.wxi ?>
 					</Directory>
 				</Directory>
 			</Directory>
+      <Directory Id="CommonAppDataFolder" Name="CommonAppData">
+          <Directory Id="MDD4AllAppData" Name="MDD4All">
+              <Directory Id="FMC4SEAppDataFolder" Name="FMC4SE">
+                <?include MDG.wxi ?>
+              </Directory>
+          </Directory>
+         </Directory>
+
 		</Directory>
 
 		
