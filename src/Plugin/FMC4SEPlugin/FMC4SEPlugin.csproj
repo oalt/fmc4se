@@ -90,6 +90,7 @@
     <Compile Include="ViewModels\AgentPropertyViewModel.cs" />
     <Compile Include="ViewModels\NewTypeViewModel.cs" />
     <Compile Include="ViewModels\PropertyViewModel.cs" />
+    <Compile Include="ViewModels\StoragePropertyViewModel.cs" />
     <Compile Include="Views\AboutBox.xaml.cs">
       <DependentUpon>AboutBox.xaml</DependentUpon>
     </Compile>

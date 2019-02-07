@@ -132,6 +132,13 @@ namespace MDD4All.FMC4SE.Plugin
 				newAgentWindow.DataContext = new ChannelPropertyViewModel(repository, newElement);
 				newAgentWindow.ShowDialog();
 			}
+            else if(newElement.Stereotype == "storage")
+            {
+                repository.SuppressEADialogs = true;
+                FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
+                newAgentWindow.DataContext = new StoragePropertyViewModel(repository, newElement);
+                newAgentWindow.ShowDialog();
+            }
 
 			return result;
 		}
@@ -166,7 +173,14 @@ namespace MDD4All.FMC4SE.Plugin
 					newAgentWindow.ShowDialog();
 					result = true;
 				}
-			}
+                else if (element.Stereotype == "storage")
+                {
+                    FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
+                    newAgentWindow.DataContext = new StoragePropertyViewModel(repository, element);
+                    newAgentWindow.ShowDialog();
+                    result = true;
+                }
+            }
 			return result;
 		}
 	}

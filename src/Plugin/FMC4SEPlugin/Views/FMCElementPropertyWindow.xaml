@@ -115,6 +115,8 @@
 				Width="80"
 				Height="30"
 				Margin="5,10,10,10"
-				HorizontalAlignment="Left" Click="cancelButton_Click"/>
+				HorizontalAlignment="Left" 
+                IsCancel="True"
+                Click="cancelButton_Click"/>
 	</Grid>
 </Window>
