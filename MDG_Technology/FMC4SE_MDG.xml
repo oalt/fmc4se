@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<MDG.Technology version="1.0"><Documentation id="FMC4SE" name="FMC4SE" version="1.0" notes="Fundamental Modeling Concept for Systems Engineering"/><UMLProfiles><UMLProfile profiletype="uml2">
+<MDG.Technology version="1.0"><Documentation id="FMC4SE" name="FMC4SE" version="1.1" notes="Fundamental Modeling Concept for Systems Engineering"/><UMLProfiles><UMLProfile profiletype="uml2">
 			<Documentation id="6CE7900F-A" name="FMC4SE" version="1.0" notes="FMC4SE"/>
 			<Content>
 				<Stereotypes>
-					<Stereotype name="access type" alias="Access Type" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="access type" alias="Access Type" metatype="FMC4SE Access Type Connection" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
+wMDAAAAAAAAAAAAAAAAAADAAAABAAAAA/gAAAEEAAAAwgAAAAIAAAACMAAAAQgAAAD8AAAAC
+AAAADAAAAAAAAAAAAAAAAAAAHR4dHR4dHR4dHR4dHR4dHh8eHh8eHh8eSktKu5FVu5JVu5FV
+u5FVSktKV0vPV0zPWEvPWEvPSktKa7dYardYardZardZSUpJWFlY3a1o3a1o3a1o3axoWFlY
+ZVncZVjcZVjcZVncWFlYb71cbr1dbr1cb71cV1hXZ2hn9cF29cF29cF29cF2Z2hnc2frc2fr
+c2frc2frZ2hndcdidcdidcdidcdiZ2hnd3h3/Md6/Md6/Md6/Md6d3h3e2/ye2/ye2/ye2/y
+d3h3fdNpfdNpfdNpfdNpd3h3g4OD/Md6/Md6/Md6/Md6g4ODgnb5gnb5gnb5gnb5g4ODh+Fy
+h+Fyh+Fyh+FygoOCiouK/Md6/Md6/Md6/Md6iouKh3v+h3v+h3v+h3v+iouKkO97kO97kO96
+kO96iouKVFVUjo6Ojo6Ojo6Ojo6OjIyMh3v+h3v+h3v+h3v+jIyMlvd/lvd/lvd/lvd/jIyM
+wMDAwMDAwMDAwMDAwMDAjo6Oh3v+h3v+h3v+h3v+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDA
+wMDAwMDAwMDAjo6Oh3v+h3v+h3v+h3v+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDA
+wMDAjo6Oh3v+h3v+h3v+h3v+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAVVZV
+jo6Ojo6Ojo6OVVZVjo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAjo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAjo6Ojo6O
+jo6Ojo6Ojo6OcnNyZQBsAHMAPQAwADsAUAByAGkAbgB0AFAAYQBnAGUASABlAGEAZABGAG8A
+bwB0AD0AMAA7AFMAaABvAHcAQQBzAEwAaQBzAHQAPQAwADsASABhAG4AZABEAHIAYQB3AD0A
+MQA7AFMAdQBwAHAAcgBlAHMAcwBlAGQAQwBvAG0AcABhAHIAdABtAGUAbgB0AHMAPQA7AFMA
+YQB2AGUAVABhAGcAPQAzAEYARQA5ADkAOAAwAEEAOwAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
 						<AppliesTo>
 							<Apply type="Connector">
-								<Property name="direction" value="Source -&gt; Destination"/>
+								<Property name="direction" value="Unspecified"/>
 								<Property name="kind" value=""/>
 								<Property name="_lineStyle" value="orthogonalR"/>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="agent" alias="Component/Agent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="agent" alias="Component/Agent" metatype="FMC4SE Agent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
+wMDAAAAAAAAAAAAAAAAAAP//AAD//wAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMAD
+AAD//wAA//8AAAAAAAAAAAAAdABMAGUAZgB0ACwAIABuAHUAbABsACAAYQBzACAAUgBlAGMA
+dABSAGkAZwBoAHQALAAgAG4AdQBsAGwAIABhAHMAIABSAGUAYwB0AEIAbwB0AHQAbwBtACwA
+IABuAHUAbABsACAAYQBzACAAWwBTAGUAcQB1AGUAbgBjAGUAXQAsACAAbgB1AGwAbAAgAGEA
+cwAgAE8AYgBqAGUAYwB0AFMAdAB5AGwAZQAsACAAbgB1AGwAbAAgAGEAcwAgAEkAbgBzAHQA
+YQBuAGMAZQBfAEkARAAgACwAIAB0AF8AbwBiAGoAZQBjAHQALgAqACwAIAB0AF8AbwBiAGoA
+ZQBjAHQALgBPAGIAagBlAGMAdABfAEkARAAgAGEAcwAgAE8AYgBqAGUAYwB0AF8ASQBEACwA
+IAB0AF8AcABhAGMAawBhAGcAZQAuAE4AYQBtAGUAIABhAHMAIABQAGEAYwBrAGEAZwBlAE4A
+YQBtAGUAIAAsACAAdABfAG8AYgBqAGUAYwB0AF8AMQAuAE4AYQBtAGUAIABhAHMAIABDAGwA
+YQBzAHMATgBhAG0AZQAgAEYAUgBPAE0AIAAoAHQAXwBvAGIAagBlAGMAdAAgAEwARQBGAFQA
+IABKAE8ASQBOACAAdABfAG8AYgBqAGUAYwB0ACAAdABfAG8AYgBqAGUAYwB0AF8AMQAgAE8A
+TgAgAHQAXwBvAGIAagBlAGMAdAAuAEMAbABhAHMAcwBpAGYAaQBlAHIAIAA9ACAAdABfAG8A
+YgBqAGUAYwB0AF8AMQAuAE8AYgBqAGUAYwB0AF8ASQBEACkAIABJAE4ATgBFAFIAIABKAE8A
+SQBOACAAdABfAHAAYQBjAGsAYQBnAGUAIABPAE4AIAB0AF8AcABhAGMAawBhAGcAZQAuAFAA
+YQBjAGsAYQBnAGUAXwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADQAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAADkAOAAwAEEAOwAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
 						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAOKBdkuob7gefQEAADYFAAAHABEAc3RyLmRhdFVUDQAHlaIVWpWiFVqVohVa
 nVRNS8NAEH3XCv6H0F4sFDFR8QtPQfBgpNhCjyJtTANtUpJVEel/982kdZO2KaaE2a95O/Pm
 7ZAcU7xhgRAO5lzFSHCMI/zo2KL3lacznkf0OLintTEmPoHhmHF3t8IOuDfoq2/EGxPupjiB
@@ -38,7 +78,27 @@ YXRVVAUAB5WiFVpQSwUGAAAAAAEAAQA+AAAAswEAAAAA</Image>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="channel" alias="Channel" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="channel" alias="Channel" metatype="FMC4SE Channel" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
+wMDAAAAAAAAB/wAAAf8AAAGAAAAH4AAAD/AAABw4AAAYGAAAGBgAABgYAAAYGAAAHDgAAA/w
+AAAH4AAAAYAAAAH/AAAB/wAAHR4dHR4dHR4dHR4dHR4dHh8eHh8eHh8eSktKu5FVu5JVu5FV
+u5FVSktKV0vPV0zPWEvPWEvPSktKa7dYardYardZardZSUpJWFlY3a1o3a1o3a1o3axoWFlY
+ZVncZVjcZVjcZVncWFlYb71cbr1dbr1cb71cV1hXZ2hn9cF29cF29cF29cF2Z2hnc2frc2fr
+c2frc2frZ2hndcdidcdidcdidcdiZ2hnd3h3/Md6/Md6/Md6/Md6d3h3e2/ye2/ye2/ye2/y
+d3h3fdNpfdNpfdNpfdNpd3h3g4OD/Md6/Md6/Md6/Md6g4ODgnb5gnb5gnb5gnb5g4ODh+Fy
+h+Fyh+Fyh+FygoOCiouK/Md6/Md6/Md6/Md6iouKh3v+h3v+h3v+h3v+iouKkO97kO97kO96
+kO96iouKVFVUjo6Ojo6Ojo6Ojo6OjIyMh3v+h3v+h3v+h3v+jIyMlvd/lvd/lvd/lvd/jIyM
+wMDAwMDAwMDAwMDAwMDAjo6Oh3v+h3v+h3v+h3v+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDA
+wMDAwMDAwMDAjo6Oh3v+h3v+h3v+h3v+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDA
+wMDAjo6Oh3v+h3v+h3v+h3v+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAVVZV
+jo6Ojo6Ojo6OVVZVjo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAjo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAjo6Ojo6O
+jo6Ojo6Ojo6OcnNyZQBsAHMAPQAwADsAUAByAGkAbgB0AFAAYQBnAGUASABlAGEAZABGAG8A
+bwB0AD0AMAA7AFMAaABvAHcAQQBzAEwAaQBzAHQAPQAwADsASABhAG4AZABEAHIAYQB3AD0A
+MQA7AFMAdQBwAHAAcgBlAHMAcwBlAGQAQwBvAG0AcABhAHIAdABtAGUAbgB0AHMAPQA7AFMA
+YQB2AGUAVABhAGcAPQAzAEYARQA5ADkAOAAwAEEAOwAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
 						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAAyDdktc+U7DagEAAHgFAAAHABEAc3RyLmRhdFVUDQAHpqQVWqakFVqmpBVa
 tVPBSsNAFJxrBP8hpJcWBG3Bi6IXUTzWVuhRbKtNIE1rEoUi+XdnX7vdlzSxFZWwL5vd2Tfz
 Zl8yhHjGEi/wMecsQoJjHOFToocPPHE15vqMO1cIMCE2Qc6Y8utygwtLOJ9IvxGr45B7OfqC
@@ -67,7 +127,32 @@ AQABAD4AAACgAQAAAAA=</Image>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="human agent" alias="Actor/Human Agent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="heading" alias="Heading" metatype="FMC4SE Heading" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
+wMDAAF9fXwA1NTUAnp6eAHx8fACDg4MAOzs7AAAAAACSkpIAYmJiAGxsbAAsLCwAHR0dAH9/
+fwCqqqoAl5eXAAAAAAAAAAAAAAAAAAAAAAAADZ4AAInwAAAGeAAAl6AAAAZ4AACXoAAABngA
+AJegAAAGeAAAl6AAAAZ7ZmbHoAAABnd3d3egAAAGeAAAl6AAAAZ4AACXoAAABngAAJegAAAG
+eAAAl6AAAAEjAABCUAAAAAAAAAAAAAAAAAAAAAAAZ2hn9cF29cF29cF29cF2Z2hnc2frc2fr
+c2frc2frZ2hndcdidcdidcdidcdiZ2hnd3h3/Md6/Md6/Md6/Md6d3h3e2/ye2/ye2/ye2/y
+d3h3fdNpfdNpfdNpfdNpd3h3g4OD/Md6/Md6/Md6/Md6g4ODgnb5gnb5gnb5gnb5g4ODh+Fy
+h+Fyh+Fyh+FygoOCiouK/Md6/Md6/Md6/Md6iouKh3v+h3v+h3v+h3v+iouKkO97kO97kO96
+kO96iouKVFVUjo6Ojo6Ojo6Ojo6OjIyMh3v+h3v+h3v+h3v+jIyMlvd/lvd/lvd/lvd/jIyM
+wMDAwMDAwMDAwMDAwMDAjo6Oh3v+h3v+h3v+h3v+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDA
+wMDAwMDAwMDAjo6Oh3v+h3v+h3v+h3v+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDA
+wMDAjo6Oh3v+h3v+h3v+h3v+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAVVZV
+jo6Ojo6Ojo6OVVZVjo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAjo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+jo6OmPqBmPqBmPqBmPqBjo6OwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAjo6Ojo6O
+jo6Ojo6Ojo6OcnNyZQBsAHMAPQAwADsAUAByAGkAbgB0AFAAYQBnAGUASABlAGEAZABGAG8A
+bwB0AD0AMAA7AFMAaABvAHcAQQBzAEwAaQBzAHQAPQAwADsASABhAG4AZABEAHIAYQB3AD0A
+MQA7AFMAdQBwAHAAcgBlAHMAcwBlAGQAQwBvAG0AcABhAHIAdABtAGUAbgB0AHMAPQA7AFMA
+YQB2AGUAVABhAGcAPQAzAEYARQA5ADkAOAAwAEEAOwAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="Object"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="human agent" alias="Actor/Human Agent" metatype="FMC4SE Human Agent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAIxyXUn8cO2LbQAAAKIAAAAHABEAc3RyLmRhdFVUDQAHJrAUWCawFFgmsBRY
 K2bIYEhkKGBIZVBgyAWyMhnyGHgZuBiqwSQnQzBQpoQhAEjmMYQDZVOAvAwGDQYjBk0Ga6ia
 IKBsMlA8EagmnSEHyNNgMGDQAWNDIAmiLYEkQocLQxFQdTmDH5AsAZpaBtQTDHeJBlxlLRAD
@@ -77,7 +162,53 @@ VVQFAAcmsBRYUEsFBgAAAAABAAEAPgAAAKMAAAAAAA==</Image>
 							<Apply type="Actor"/>
 						</AppliesTo>
 					</Stereotype>
+					<Stereotype name="requirement" alias="Requirement" metatype="FMC4SE Requirement" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Requirement"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="Identifier" type="int" description="" unit="" values="" default=""/>
+							<Tag name="software" type="boolean" description="" unit="" values="true,false" default="false"/>
+							<Tag name="electronics" type="boolean" description="" unit="" values="true,false" default="false"/>
+							<Tag name="mechanics" type="boolean" description="" unit="" values="true,false" default="false"/>
+							<Tag name="safety" type="boolean" description="" unit="" values="true,false" default="false"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="satisfy" alias="Satisfies" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Dependency">
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="specification" alias="Specification" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Package">
+								<Property name="URI" value=""/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
 					<Stereotype name="storage" alias="Object/Storage" metatype="FMC4SE Storage" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
+wMDAAAAAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAREREAAAABEREiEREQABESIiIiIREAESIiIiIiEQARIiIiIiIRABEiIi
+IiIhEAESIiIiIiEQARIhESESIRABEiIiIiIhEAESIiIiIiEQARIhERESIRABEiIiIiIhEAES
+IiIiIiEQAREiIiIiERAAERESIRERAAAAAREREAAAwMDAwMDAwMDAzJmZ////////////8Mqm
+AJn/M///mTMz8Mqm8Mqm8MqmzGYzwMDAwMDAwMDAwMDAAACAzJmZ////////8MqmM///M///
+M///8Mqm8Mqm8MqmzGYzwMDAwMDAwMDAAACAAACAgAAAzJmZ////////8MqmM///8MqmAAD/
+8Mqm8MqmzGYzwMDAwMDAAACAAAD/AACA/wAAgAAAzJmZ////////8MqmAAD/AAD/mTMz8Mqm
+zGYzwMDAwMDAAAD/AAD/AJn//wAAgAAAzJmZ////////8MqmAJn/M///mTMz8MqmzGYzwMDA
+wMDAAAD/AJn/M///gICAgAAAzJmZ////////8MqmM///M///M///8MqmzGYzwMDAwMDAAJn/
+M///M///M///ZmZmzJmZ////8MqmAAD/8MqmM///8Mqm8MqmzGYzwMDAwMDAwMDAM///M///
+M///zJmZ////8MqmAAD/AAD/mTMz8Mqm8Mqm8MqmzGYzwMDAwMDAwMDAwMDAM///zJmZ////
+////8MqmAJn/M///mTMzzJmZzGYzzGYzzGYzwMDAwMDAwMDAwMDAzJmZ////////////8Mqm
+M///M///M///zJmZ////zJmZwMDAwMDAwMDAwMDAwMDAzJmZ////////////////8MqmM///
+8MqmzJmZzJmZwMDAwMDAwMDAwMDAwMDAwMDAzJmZzJmZzJmZzJmZzJmZzJmZzJmZzJmZzJmZ
+wMDAwMDAwMDAwMDAzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N
+zc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N
+zc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N
+zc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N
+zQ==</Icon>
 						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAGxyXUnCaenjhAEAAG4EAAAHABEAc3RyLmRhdFVUDQAH6q8UWOqvFFjqrxRY
 lVNNS8NAFJyrgv+hpJcWWtGC+EVPKih4KPbQY5Gm2lKTlCQqIvnvzrxNsq1abQn7Ntm3M2/e
 RzLM8Iglpmgg4tscMQ6wj0+ze/SOefrC82d6GuhzBZjwfoycNuXXZXl3yO8cA/ONiAj5NUML
@@ -128,6 +259,42 @@ AABzdHIuZGF0VVQFAAfqrxRYUEsFBgAAAAABAAEAPgAAALoBAAAAAA==</Image>
 							<Tag name="FMC4SE::allocate(UML::Dependency)" type="" description="" unit="" values="" default="Allocation"/>
 							<Tag name="FMC4SE::deploy(UML::Dependency)" type="" description="" unit="" values="" default="Deploy"/>
 						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="FMC4SE Requirements" notes="FMC4SE Requirements" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="FMC4SE::specification(UML::Package)" type="" description="" unit="" values="" default="Specification"/>
+							<Tag name="FMC4SE::heading(UML::Object)" type="" description="" unit="" values="" default="Heading"/>
+							<Tag name="FMC4SE::requirement(UML::Requirement)" type="" description="" unit="" values="" default="Requirement"/>
+							<Tag name="FMC4SE::satisfy(UML::Dependency)" type="" description="" unit="" values="" default="Satisfies"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="FMC4SE::heading(UML::Object)" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
+wMDAAF9fXwA1NTUAnp6eAHx8fACDg4MAOzs7AAAAAACSkpIAYmJiAGxsbAAsLCwAHR0dAH9/
+fwCqqqoAl5eXAAAAAAAAAAAAAAAAAAAAAAAADZ4AAInwAAAGeAAAl6AAAAZ4AACXoAAABngA
+AJegAAAGeAAAl6AAAAZ7ZmbHoAAABnd3d3egAAAGeAAAl6AAAAZ4AACXoAAABngAAJegAAAG
+eAAAl6AAAAEjAABCUAAAAAAAAAAAAAAAAAAAAAAAbgBjAGUAXQAsACAAbgB1AGwAbAAgAGEA
+cwAgAE8AYgBqAGUAYwB0AFMAdAB5AGwAZQAsACAAbgB1AGwAbAAgAGEAcwAgAEkAbgBzAHQA
+YQBuAGMAZQBfAEkARAAgACwAIAB0AF8AbwBiAGoAZQBjAHQALgAqACwAIAB0AF8AbwBiAGoA
+ZQBjAHQALgBPAGIAagBlAGMAdABfAEkARAAgAGEAcwAgAE8AYgBqAGUAYwB0AF8ASQBEACwA
+IAB0AF8AcABhAGMAawBhAGcAZQAuAE4AYQBtAGUAIABhAHMAIABQAGEAYwBrAGEAZwBlAE4A
+YQBtAGUAIAAsACAAdABfAG8AYgBqAGUAYwB0AF8AMQAuAE4AYQBtAGUAIABhAHMAIABDAGwA
+YQBzAHMATgBhAG0AZQAgAEYAUgBPAE0AIAAoAHQAXwBvAGIAagBlAGMAdAAgAEwARQBGAFQA
+IABKAE8ASQBOACAAdABfAG8AYgBqAGUAYwB0ACAAdABfAG8AYgBqAGUAYwB0AF8AMQAgAE8A
+TgAgAHQAXwBvAGIAagBlAGMAdAAuAEMAbABhAHMAcwBpAGYAaQBlAHIAIAA9ACAAdABfAG8A
+YgBqAGUAYwB0AF8AMQAuAE8AYgBqAGUAYwB0AF8ASQBEACkAIABJAE4ATgBFAFIAIABKAE8A
+SQBOACAAdABfAHAAYQBjAGsAYQBnAGUAIABPAE4AIAB0AF8AcABhAGMAawBhAGcAZQAuAFAA
+YQBjAGsAYQBnAGUAXwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADYAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAA3QEAAHoCAADlAQAA1gEAAKYBAADeAQAArgEA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
 					</Stereotype>
 					<Stereotype name="FMC4SECompositionalStructures" alias="FMC4SE Compositional Structures" notes="Elements for Architectural Views." bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 						<AppliesTo>
