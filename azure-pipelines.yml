@@ -73,7 +73,13 @@ steps:
     
 # rename .msi file
 - script: |
-    ren src/Plugin/Setup/bin/Release/FMC4SE-Plugin-Setup.msi src/Plugin/Setup/bin/Release/FMC4SE-Plugin-Setup_$(build.buildnumber).msi
+    cd src/Plugin/Setup/bin/Release
+    ren FMC4SE-Plugin-Setup.msi FMC4SE-Plugin-Setup_$(build.buildnumber).msi
+    cd ..
+    cd ..
+    cd ..
+    cd ..
+    cd ..
 
 # copy build results
 - task: CopyFiles@2
