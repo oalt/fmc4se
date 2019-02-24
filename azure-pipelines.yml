@@ -72,7 +72,7 @@ steps:
     configuration: '$(buildConfiguration)'
     
 # rename .msi file
-- task: script |
+- script: |
     ren src/Plugin/Setup/bin/Release/FMC4SE-Plugin-Setup.msi src/Plugin/Setup/bin/Release/FMC4SE-Plugin-Setup_$(build.buildnumber).msi
 
 # copy build results
