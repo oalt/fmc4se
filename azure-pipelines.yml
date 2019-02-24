@@ -64,10 +64,10 @@ steps:
     }
    
 # build software
-- task: MSBuild@1
+- task: VSBuild@1
   inputs:
     solution: '$(solution)' 
-    msbuildArguments: '/p:installerFileVersion=$(build.buildnumber)'
+    msbuildArgs: '/p:installerFileVersion=$(build.buildnumber)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     
