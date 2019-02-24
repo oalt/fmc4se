@@ -64,7 +64,7 @@ steps:
     }
    
 # build software
-- task: VSBuild@1
+- task: MSBuild@1
   inputs:
     solution: '$(solution)' 
     msbuildArguments: '/p:installerFileVersion=$(build.buildnumber)'
