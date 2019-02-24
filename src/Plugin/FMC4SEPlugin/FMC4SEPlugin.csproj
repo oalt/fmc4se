@@ -50,12 +50,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Interop.EA, Version=2.10.238.1, Culture=neutral, PublicKeyToken=d28e1c76302f6a17, processorArchitecture=MSIL">
-      <HintPath>..\packages\Interop.EA.12.1.1230\lib\Interop.EA.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\libs\Interop.EA.dll</HintPath>
     </Reference>
-    <Reference Include="MDD4All.EnterpriseArchitect.Manipulations, Version=2.0.0.4, Culture=neutral, PublicKeyToken=7775311d0fab0175, processorArchitecture=MSIL">
-      <HintPath>..\packages\MDD4All.EnterpriseArchitect.Manipulations.2.0.0.4-dev\lib\net40\MDD4All.EnterpriseArchitect.Manipulations.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="MDD4All.EnterpriseArchitect.Manipulations, Version=2.1.0.26, Culture=neutral, PublicKeyToken=7775311d0fab0175, processorArchitecture=MSIL">
+      <HintPath>..\packages\MDD4All.EnterpriseArchitect.Manipulations.2.1.0.26\lib\net40\MDD4All.EnterpriseArchitect.Manipulations.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>

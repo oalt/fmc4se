@@ -56,7 +56,7 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 			
 
 			string name = AgentElement.Name;
-			if (!name.StartsWith("Port"))
+			if (!name.StartsWith("FMC4SE Channel"))
 			{ 
 				Name = name;
 			}
