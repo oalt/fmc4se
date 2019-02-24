@@ -71,11 +71,16 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     
+# rename .msi file
+- task: script |
+    ren src/Plugin/Setup/bin/Release/FMC4SE-Plugin-Setup.msi src/Plugin/Setup/bin/Release/FMC4SE-Plugin-Setup_$(build.buildnumber).msi
+
 # copy build results
 - task: CopyFiles@2
   inputs:
     contents: 'src/Plugin/Setup/bin/Release/*.msi'
     targetFolder: $(Build.ArtifactStagingDirectory)
+    flattenFolders: true
 
 # publish build results
 - task: PublishBuildArtifacts@1
