@@ -31,9 +31,9 @@
 			Installed OR NETFRAMEWORK40FULL
 		</Condition>
 
-   <Condition Message="This setup requires Enterprise Architect to be installed.">
+   <!-- <Condition Message="This setup requires Enterprise Architect to be installed.">
 			EADIRNAME OR REMOVE
-		</Condition>
+		</Condition> -->
 		
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="ProgramFilesFolder">
