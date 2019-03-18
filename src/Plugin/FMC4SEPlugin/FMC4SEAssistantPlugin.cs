@@ -148,7 +148,7 @@ namespace MDD4All.FMC4SE.Plugin
 			bool result = true;
 			int connectorId = Convert.ToInt32(info.Get(0).Value.ToString());
 
-			_channelDataTransferHelper.SetPropertyTypeAndDirectionOnFlowPortCreation(connectorId, "channel", "access type", "Port");
+			_channelDataTransferHelper.SetPropertyTypeAndDirectionOnFlowPortCreation(connectorId, "channel", "access type", "FMC4SE Channel");
 			
 			return result;
 		}
