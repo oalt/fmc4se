@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MDD4All.FMC4SE.Plugin.Views"
         xmlns:viewModels="clr-namespace:MDD4All.FMC4SE.Plugin.ViewModels"
         mc:Ignorable="d"
-        Title="About FMC4SE" 
+        Title="{Binding Title}" 
         Height="300" 
         Width="600" 
         Icon="/MDD4All.FMC4SE.Plugin;component/Assets/fmc4se.ico"
@@ -37,13 +37,13 @@
                     Grid.Column="1"
                     Grid.Row="0">
 
-            <TextBlock Text="About FMC4SE"
+            <TextBlock Text="{Binding Title}"
                        FontFamily="SegoeUI"
                        FontWeight="Bold"
                        FontSize="32" 
                        Margin="20"/>
 
-            <TextBlock Text="Fundamental Modeling Concepts for Systems Engineering Enterprise Architect Plugin" 
+            <TextBlock Text="{Binding Description}" 
                        TextWrapping="Wrap"
                        Margin="20"/>
 
@@ -54,7 +54,7 @@
                 <TextBlock Text="{Binding AssemblyVersion}" />
             </StackPanel>
 
-            <TextBlock Text="(c) MDD4All.de"
+            <TextBlock Text="{Binding Copyright}"
                        Margin="20" />
 
             
