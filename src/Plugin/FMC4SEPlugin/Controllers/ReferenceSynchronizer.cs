@@ -90,17 +90,17 @@ namespace MDD4All.FMC4SE.Plugin.Controllers
 
             for (short count = 0; count < originalElement.EmbeddedElements.Count; count++)
             {
-                EAAPI.Element embeddedElement = (EA.Element)originalElement.EmbeddedElements.GetAt(count);
+                EAAPI.Element originalPort = (EAAPI.Element)originalElement.EmbeddedElements.GetAt(count);
 
-                if (embeddedElement.Type == "Port")
+                if (originalPort.Type == "Port")
                 {
                     bool found = false;
-                    for (short connectorCount = 0; connectorCount < embeddedElement.Connectors.Count; connectorCount++)
+                    for (short connectorCount = 0; connectorCount < originalPort.Connectors.Count; connectorCount++)
                     {
-                        EAAPI.Connector originalPortConnector = (EAAPI.Connector)embeddedElement.Connectors.GetAt(connectorCount);
+                        EAAPI.Connector originalPortConnector = (EAAPI.Connector)originalPort.Connectors.GetAt(connectorCount);
 
-                        if (originalPortConnector.SupplierID == embeddedElement.ElementID &&
-                            originalPortConnector.ClientID != embeddedElement.ElementID &&
+                        if (originalPortConnector.SupplierID == originalPort.ElementID &&
+                            originalPortConnector.ClientID != originalPort.ElementID &&
                             originalPortConnector.Type == "Dependency" &&
                             originalPortConnector.Stereotype == "referenceOf")
                         {
@@ -108,9 +108,9 @@ namespace MDD4All.FMC4SE.Plugin.Controllers
                             if (referencePort.Type == "Port" && referencePort.ParentID == _referenceElement.ElementID)
                             {
                                 // reference port found - synch data by connector
-                                logger.Info("ReferenceOf connection found for port, synchronizing data for element " + embeddedElement.Name);
+                                logger.Info("ReferenceOf connection found for port, synchronizing data for element " + originalPort.Name);
 
-                                SynchronizePortData(embeddedElement, referencePort);
+                                SynchronizePortData(originalPort, referencePort);
 
                                 found = true;
                                 break;
@@ -121,7 +121,7 @@ namespace MDD4All.FMC4SE.Plugin.Controllers
                     } // for
                     if (!found)
                     {
-                        orphanPorts.Add(embeddedElement.ElementID);
+                        orphanPorts.Add(originalPort.ElementID);
                     }
                 }
 
@@ -135,16 +135,16 @@ namespace MDD4All.FMC4SE.Plugin.Controllers
 
                 for (short referencePortCounter = 0; referencePortCounter < _referenceElement.EmbeddedElements.Count; referencePortCounter++)
                 {
-                    EAAPI.Element embeddedElement = (EAAPI.Element)_referenceElement.EmbeddedElements.GetAt(referencePortCounter);
-                    if (embeddedElement.Type == "Port")
+                    EAAPI.Element referencePort = (EAAPI.Element)_referenceElement.EmbeddedElements.GetAt(referencePortCounter);
+                    if (referencePort.Type == "Port")
                     {
                         bool synchByConnector = false;
-                        for (short referenceConnectorCount = 0; referenceConnectorCount < embeddedElement.Connectors.Count; referenceConnectorCount++)
+                        for (short referenceConnectorCount = 0; referenceConnectorCount < referencePort.Connectors.Count; referenceConnectorCount++)
                         {
-                            EAAPI.Connector portConnector = (EAAPI.Connector)embeddedElement.Connectors.GetAt(referenceConnectorCount);
+                            EAAPI.Connector portConnector = (EAAPI.Connector)referencePort.Connectors.GetAt(referenceConnectorCount);
 
-                            if (portConnector.ClientID == embeddedElement.ElementID && 
-                                portConnector.SupplierID != embeddedElement.ElementID && 
+                            if (portConnector.ClientID == referencePort.ElementID && 
+                                portConnector.SupplierID != referencePort.ElementID && 
                                 portConnector.Type == "Dependency" && 
                                 portConnector.Stereotype == "referenceOf")
                             {
@@ -158,13 +158,15 @@ namespace MDD4All.FMC4SE.Plugin.Controllers
 
                         if (!synchByConnector)
                         {
-                            if (embeddedElement.ElementID == orphanPortID)
+                            EAAPI.Element originalPort = _repository.GetElementByID(orphanPortID);
+                            if (referencePort.Name == originalPort.Name &&
+                                referencePort.PropertyType == originalPort.PropertyType)
                             {
                                 match = true;
-                                //SyncReferenceData(opd, embeddedElement);
 
-                                EAAPI.Element originalPort = _repository.GetElementByID(orphanPortID);
-                                SynchronizePortReferenceOfConnector(originalPort, embeddedElement);
+                                SynchronizePortData(originalPort, referencePort);
+                                
+                                SynchronizePortReferenceOfConnector(originalPort, referencePort);
 
                                 break;
                             }
