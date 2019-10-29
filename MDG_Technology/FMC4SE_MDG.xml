@@ -1,59 +1,25 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<MDG.Technology version="1.0"><Documentation id="FMC4SE" name="FMC4SE" version="1.2" notes="Fundamental Modeling Concept for Systems Engineering"/><UMLProfiles><UMLProfile profiletype="uml2">
+<MDG.Technology version="1.0"><Documentation id="FMC4SE" name="FMC4SE" version="1.3" notes="Fundamental Modeling Concept for Systems Engineering"/><UMLProfiles><UMLProfile profiletype="uml2">
 			<Documentation id="6CE7900F-A" name="FMC4SE" version="1.0" notes="FMC4SE"/>
 			<Content>
 				<Stereotypes>
-					<Stereotype name="access type" alias="Access Type" metatype="FMC4SE Access Type Connection" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="access type" alias="Access Type" metatype="FMC4SE Access Type Connection" notes="">
 						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
 wMDAAAAAAAAAAAAAAAAAADAAAABAAAAA/gAAAEEAAAAwgAAAAIAAAACMAAAAQgAAAD8AAAAC
-AAAADAAAAAAAAAAAAAAAAAAAZQBvAHQAeQBwAGUALAAgAHQAXwBjAG8AbgBuAGUAYwB0AG8A
-cgAuAEMAbwBuAG4AZQBjAHQAbwByAF8ASQBEACwAIAB0AF8AYwBvAG4AbgBlAGMAdABvAHIA
-LgBTAHQAYQByAHQAXwBPAGIAagBlAGMAdABfAEkARAAgAAoARgBSAE8ATQAgAHQAXwBvAGIA
-agBlAGMAdAAsACAAdABfAGMAbwBuAG4AZQBjAHQAbwByACAACgBXAEgARQBSAEUAIAAKACAA
-dABfAGMAbwBuAG4AZQBjAHQAbwByAC4AUwB0AGEAcgB0AF8ATwBiAGoAZQBjAHQAXwBJAEQA
-IABJAE4AIAAoADIANQA3ACkAIAAgAAoAQQBOAEQAIAB0AF8AbwBiAGoAZQBjAHQALgBPAGIA
-agBlAGMAdABfAEkARAAgAD0AIAB0AF8AYwBvAG4AbgBlAGMAdABvAHIALgBFAG4AZABfAE8A
-YgBqAGUAYwB0AF8ASQBEACAACgBBAE4ARAAgAHQAXwBvAGIAagBlAGMAdAAuAE8AYgBqAGUA
-YwB0AF8AVAB5AHAAZQAgAD0AIAAnAEMAbABhAHMAcwAnACAACgBBAE4ARAAgAHQAXwBvAGIA
-agBlAGMAdAAuAFMAdABlAHIAZQBvAHQAeQBwAGUAIABJAE4AKAAnAG0AZQB0AGEAYwBsAGEA
-cwBzACcALAAgACcAcwB0AGUAcgBlAG8AdAB5AHAAZQAnACwAIAAnAE0AZQB0AGEAYwBsAGEA
-cwBzACcAKQAgAAoAQQBOAEQAIAAoACgAdABfAGMAbwBuAG4AZQBjAHQAbwByAC4AQwBvAG4A
-bgBlAGMAdABvAHIAXwBUAHkAcABlACAAPQAgACcAQQBzAHMAbwBjAGkAYQB0AGkAbwBuACcA
-IABBAE4ARAAgAHQAXwBjAG8AbgBuAGUAYwB0AG8AcgAuAFMAdABlAHIAZQBvAHQAeQBwAGUA
-IAA9ACAAJwBlAHgAdABlAG4AZABzACcAKQAgAE8AUgAgAHQAXwBjAG8AbgBuAGUAYwB0AG8A
-cgAuAEMAbwBuAG4AZQBjAHQAbwByAF8AVAB5AHAAZQAgAGkAbgAgACgAJwBHAGUAbgBlAHIA
-YQBsAGkAegBhAHQAaQBvAG4AJwAsACcARQB4AHQAZQBuAHMAaQBvAG4AJwApACkAAAAA
-AA==</Icon>
+AAAADAAAAAAAAAAAAAAAAAAA</Icon>
 						<AppliesTo>
 							<Apply type="Connector">
+								<Property name="_lineStyle" value="orthogonalR"/>
 								<Property name="direction" value="Unspecified"/>
 								<Property name="kind" value=""/>
-								<Property name="_lineStyle" value="orthogonalR"/>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="agent" alias="Component/Agent" metatype="FMC4SE Agent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="agent" alias="Component/Agent" metatype="FMC4SE Agent" notes="">
 						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
 wMDAAAAAAAAAAAAAAAAAAP//AAD//wAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMAD
-AAD//wAA//8AAAAAAAAAAAAAZQBvAHQAeQBwAGUALAAgAHQAXwBjAG8AbgBuAGUAYwB0AG8A
-cgAuAEMAbwBuAG4AZQBjAHQAbwByAF8ASQBEACwAIAB0AF8AYwBvAG4AbgBlAGMAdABvAHIA
-LgBTAHQAYQByAHQAXwBPAGIAagBlAGMAdABfAEkARAAgAAoARgBSAE8ATQAgAHQAXwBvAGIA
-agBlAGMAdAAsACAAdABfAGMAbwBuAG4AZQBjAHQAbwByACAACgBXAEgARQBSAEUAIAAKACAA
-dABfAGMAbwBuAG4AZQBjAHQAbwByAC4AUwB0AGEAcgB0AF8ATwBiAGoAZQBjAHQAXwBJAEQA
-IABJAE4AIAAoADIANQA3ACkAIAAgAAoAQQBOAEQAIAB0AF8AbwBiAGoAZQBjAHQALgBPAGIA
-agBlAGMAdABfAEkARAAgAD0AIAB0AF8AYwBvAG4AbgBlAGMAdABvAHIALgBFAG4AZABfAE8A
-YgBqAGUAYwB0AF8ASQBEACAACgBBAE4ARAAgAHQAXwBvAGIAagBlAGMAdAAuAE8AYgBqAGUA
-YwB0AF8AVAB5AHAAZQAgAD0AIAAnAEMAbABhAHMAcwAnACAACgBBAE4ARAAgAHQAXwBvAGIA
-agBlAGMAdAAuAFMAdABlAHIAZQBvAHQAeQBwAGUAIABJAE4AKAAnAG0AZQB0AGEAYwBsAGEA
-cwBzACcALAAgACcAcwB0AGUAcgBlAG8AdAB5AHAAZQAnACwAIAAnAE0AZQB0AGEAYwBsAGEA
-cwBzACcAKQAgAAoAQQBOAEQAIAAoACgAdABfAGMAbwBuAG4AZQBjAHQAbwByAC4AQwBvAG4A
-bgBlAGMAdABvAHIAXwBUAHkAcABlACAAPQAgACcAQQBzAHMAbwBjAGkAYQB0AGkAbwBuACcA
-IABBAE4ARAAgAHQAXwBjAG8AbgBuAGUAYwB0AG8AcgAuAFMAdABlAHIAZQBvAHQAeQBwAGUA
-IAA9ACAAJwBlAHgAdABlAG4AZABzACcAKQAgAE8AUgAgAHQAXwBjAG8AbgBuAGUAYwB0AG8A
-cgAuAEMAbwBuAG4AZQBjAHQAbwByAF8AVAB5AHAAZQAgAGkAbgAgACgAJwBHAGUAbgBlAHIA
-YQBsAGkAegBhAHQAaQBvAG4AJwAsACcARQB4AHQAZQBuAHMAaQBvAG4AJwApACkAAAAA
-AA==</Icon>
-						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAOKBdkuob7gefQEAADYFAAAHABEAc3RyLmRhdFVUDQAHlaIVWpWiFVqVohVa
+AAD//wAA//8AAAAAAAAAAAAA</Icon>
+						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAPpdXU+ob7gefQEAADYFAAAHABEAc3RyLmRhdFVUDQAHwSa4XcEmuF3BJrhd
 nVRNS8NAEH3XCv6H0F4sFDFR8QtPQfBgpNhCjyJtTANtUpJVEel/982kdZO2KaaE2a95O/Pm
 7ZAcU7xhgRAO5lzFSHCMI/zo2KL3lacznkf0OLintTEmPoHhmHF3t8IOuDfoq2/EGxPupjiB
 h+4fJsY7Tx4ZM8eQY8Rdm6tv5dBGT+MPkBJn8EVEpuddfkWENbNqPp83ZrSM8c4YRczDJT+b
@@ -61,44 +27,27 @@ e9mIg6/KiB7Nsns4xxVjuJq/hwvcHMzhgVFDqm0YOWWemOtmbEQHYXKtmhzKI1AWokfBQTqi
 GQ+XmgiH6rzN52VVr2SKtHr7ni5HO9u7+yoJ8MEoht6FdvGYZlidrazsr+u0gFV80jvkLLUU
 PJxKd7XwpN1SRsn7/xdVrOqRTVG7XrsY699ItBXb1LZPv2QxxCaqq+i0xpSVF2SqvZOpzoJN
 6JmXummXxmuGITPkkL/R5htYDiOu5J8lWSaaoYPnVY4ObjXHdu377/vMK/xzrSZW/qelqDbi
-kvYLUEsBAhcLFAAAAAgA4oF2S6hvuB59AQAANgUAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5k
-YXRVVAUAB5WiFVpQSwUGAAAAAAEAAQA+AAAAswEAAAAA</Image>
+kvYLUEsBAhcLFAAAAAgA+l1dT6hvuB59AQAANgUAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5k
+YXRVVAUAB8EmuF1QSwUGAAAAAAEAAQA+AAAAswEAAAAA</Image>
 						<AppliesTo>
 							<Apply type="Object"/>
 						</AppliesTo>
 						<TaggedValues>
-							<Tag name="Type" type="enumeration" description="" unit="" values="Standard,Software,Chain,Electronic,Mechanical" default="Standard"/>
 							<Tag name="Multiplicity" type="enumeration" description="" unit="" values="Single,Multiple" default="Single"/>
+							<Tag name="Type" type="enumeration" description="" unit="" values="Standard,Software,Chain,Electronic,Mechanical" default="Standard"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="allocate" alias="Allocate" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="allocate" alias="Allocate" notes="">
 						<AppliesTo>
 							<Apply type="Dependency">
 								<Property name="direction" value="Source -&gt; Destination"/>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="channel" alias="Channel" metatype="FMC4SE Channel" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="channel" alias="Channel" metatype="FMC4SE Channel" notes="">
 						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
 wMDAAAAAAAAB/wAAAf8AAAGAAAAH4AAAD/AAABw4AAAYGAAAGBgAABgYAAAYGAAAHDgAAA/w
-AAAH4AAAAYAAAAH/AAAB/wAAZQBvAHQAeQBwAGUALAAgAHQAXwBjAG8AbgBuAGUAYwB0AG8A
-cgAuAEMAbwBuAG4AZQBjAHQAbwByAF8ASQBEACwAIAB0AF8AYwBvAG4AbgBlAGMAdABvAHIA
-LgBTAHQAYQByAHQAXwBPAGIAagBlAGMAdABfAEkARAAgAAoARgBSAE8ATQAgAHQAXwBvAGIA
-agBlAGMAdAAsACAAdABfAGMAbwBuAG4AZQBjAHQAbwByACAACgBXAEgARQBSAEUAIAAKACAA
-dABfAGMAbwBuAG4AZQBjAHQAbwByAC4AUwB0AGEAcgB0AF8ATwBiAGoAZQBjAHQAXwBJAEQA
-IABJAE4AIAAoADIAOAAxACkAIAAgAAoAQQBOAEQAIAB0AF8AbwBiAGoAZQBjAHQALgBPAGIA
-agBlAGMAdABfAEkARAAgAD0AIAB0AF8AYwBvAG4AbgBlAGMAdABvAHIALgBFAG4AZABfAE8A
-YgBqAGUAYwB0AF8ASQBEACAACgBBAE4ARAAgAHQAXwBvAGIAagBlAGMAdAAuAE8AYgBqAGUA
-YwB0AF8AVAB5AHAAZQAgAD0AIAAnAEMAbABhAHMAcwAnACAACgBBAE4ARAAgAHQAXwBvAGIA
-agBlAGMAdAAuAFMAdABlAHIAZQBvAHQAeQBwAGUAIABJAE4AKAAnAG0AZQB0AGEAYwBsAGEA
-cwBzACcALAAgACcAcwB0AGUAcgBlAG8AdAB5AHAAZQAnACwAIAAnAE0AZQB0AGEAYwBsAGEA
-cwBzACcAKQAgAAoAQQBOAEQAIAAoACgAdABfAGMAbwBuAG4AZQBjAHQAbwByAC4AQwBvAG4A
-bgBlAGMAdABvAHIAXwBUAHkAcABlACAAPQAgACcAQQBzAHMAbwBjAGkAYQB0AGkAbwBuACcA
-IABBAE4ARAAgAHQAXwBjAG8AbgBuAGUAYwB0AG8AcgAuAFMAdABlAHIAZQBvAHQAeQBwAGUA
-IAA9ACAAJwBlAHgAdABlAG4AZABzACcAKQAgAE8AUgAgAHQAXwBjAG8AbgBuAGUAYwB0AG8A
-cgAuAEMAbwBuAG4AZQBjAHQAbwByAF8AVAB5AHAAZQAgAGkAbgAgACgAJwBHAGUAbgBlAHIA
-YQBsAGkAegBhAHQAaQBvAG4AJwAsACcARQB4AHQAZQBuAHMAaQBvAG4AJwApACkAAACW
-AA==</Icon>
+AAAH4AAAAYAAAAH/AAAB/wAA</Icon>
 						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAAyDdktc+U7DagEAAHgFAAAHABEAc3RyLmRhdFVUDQAHpqQVWqakFVqmpBVa
 tVPBSsNAFJxrBP8hpJcWBG3Bi6IXUTzWVuhRbKtNIE1rEoUi+XdnX7vdlzSxFZWwL5vd2Tfz
 Zl8yhHjGEi/wMecsQoJjHOFToocPPHE15vqMO1cIMCE2Qc6Y8utygwtLOJ9IvxGr45B7OfqC
@@ -120,68 +69,57 @@ AQABAD4AAACgAQAAAAA=</Image>
 							<Tag name="Type" type="enumeration" description="" unit="" values="ReadWrite,Request,Response,RequestResponse" default="ReadWrite"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="deploy" alias="Deploy" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="deploy" alias="Deploy" notes="">
 						<AppliesTo>
 							<Apply type="Dependency">
 								<Property name="direction" value="Source -&gt; Destination"/>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="deriveReqt" alias="Derives" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="deriveReqt" alias="Derives" notes="">
 						<AppliesTo>
 							<Apply type="Dependency">
 								<Property name="direction" value="Source -&gt; Destination"/>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="fmcreq" alias="FMC4SE Requirement" metatype="FMC4SE Requirement" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="fmcreq" alias="FMC4SE Requirement" metatype="FMC4SE Requirement" notes="">
 						<AppliesTo>
 							<Apply type="Requirement"/>
 						</AppliesTo>
 						<TaggedValues>
-							<Tag name="Identifier" type="int" description="" unit="" values="" default=""/>
-							<Tag name="software" type="boolean" description="" unit="" values="true,false" default="false"/>
 							<Tag name="electronics" type="boolean" description="" unit="" values="true,false" default="false"/>
+							<Tag name="Identifier" type="int" description="" unit="" values="" default=""/>
 							<Tag name="mechanics" type="boolean" description="" unit="" values="true,false" default="false"/>
 							<Tag name="safety" type="boolean" description="" unit="" values="true,false" default="false"/>
+							<Tag name="software" type="boolean" description="" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="heading" alias="Heading" metatype="FMC4SE Heading" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="heading" alias="Heading" metatype="FMC4SE Heading" notes="">
 						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
 wMDAAF9fXwA1NTUAnp6eAHx8fACDg4MAOzs7AAAAAACSkpIAYmJiAGxsbAAsLCwAHR0dAH9/
 fwCqqqoAl5eXAAAAAAAAAAAAAAAAAAAAAAAADZ4AAInwAAAGeAAAl6AAAAZ4AACXoAAABngA
 AJegAAAGeAAAl6AAAAZ7ZmbHoAAABnd3d3egAAAGeAAAl6AAAAZ4AACXoAAABngAAJegAAAG
-eAAAl6AAAAEjAABCUAAAAAAAAAAAAAAAAAAAAAAARAAgAAoARgBSAE8ATQAgAHQAXwBvAGIA
-agBlAGMAdAAsACAAdABfAGMAbwBuAG4AZQBjAHQAbwByACAACgBXAEgARQBSAEUAIAAKACAA
-dABfAGMAbwBuAG4AZQBjAHQAbwByAC4AUwB0AGEAcgB0AF8ATwBiAGoAZQBjAHQAXwBJAEQA
-IABJAE4AIAAoADIANQA3ACkAIAAgAAoAQQBOAEQAIAB0AF8AbwBiAGoAZQBjAHQALgBPAGIA
-agBlAGMAdABfAEkARAAgAD0AIAB0AF8AYwBvAG4AbgBlAGMAdABvAHIALgBFAG4AZABfAE8A
-YgBqAGUAYwB0AF8ASQBEACAACgBBAE4ARAAgAHQAXwBvAGIAagBlAGMAdAAuAE8AYgBqAGUA
-YwB0AF8AVAB5AHAAZQAgAD0AIAAnAEMAbABhAHMAcwAnACAACgBBAE4ARAAgAHQAXwBvAGIA
-agBlAGMAdAAuAFMAdABlAHIAZQBvAHQAeQBwAGUAIABJAE4AKAAnAG0AZQB0AGEAYwBsAGEA
-cwBzACcALAAgACcAcwB0AGUAcgBlAG8AdAB5AHAAZQAnACwAIAAnAE0AZQB0AGEAYwBsAGEA
-cwBzACcAKQAgAAoAQQBOAEQAIAAoACgAdABfAGMAbwBuAG4AZQBjAHQAbwByAC4AQwBvAG4A
-bgBlAGMAdABvAHIAXwBUAHkAcABlACAAPQAgACcAQQBzAHMAbwBjAGkAYQB0AGkAbwBuACcA
-IABBAE4ARAAgAHQAXwBjAG8AbgBuAGUAYwB0AG8AcgAuAFMAdABlAHIAZQBvAHQAeQBwAGUA
-IAA9ACAAJwBlAHgAdABlAG4AZABzACcAKQAgAE8AUgAgAHQAXwBjAG8AbgBuAGUAYwB0AG8A
-cgAuAEMAbwBuAG4AZQBjAHQAbwByAF8AVAB5AHAAZQAgAGkAbgAgACgAJwBHAGUAbgBlAHIA
-YQBsAGkAegBhAHQAaQBvAG4AJwAsACcARQB4AHQAZQBuAHMAaQBvAG4AJwApACkAAAAA
-AA==</Icon>
+eAAAl6AAAAEjAABCUAAAAAAAAAAAAAAAAAAAAAAA</Icon>
 						<AppliesTo>
 							<Apply type="Object"/>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="human agent" alias="Actor/Human Agent" metatype="FMC4SE Human Agent" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
-						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAIxyXUn8cO2LbQAAAKIAAAAHABEAc3RyLmRhdFVUDQAHJrAUWCawFFgmsBRY
-K2bIYEhkKGBIZVBgyAWyMhnyGHgZuBiqwSQnQzBQpoQhAEjmMYQDZVOAvAwGDQYjBk0Ga6ia
-IKBsMlA8EagmnSEHyNNgMGDQAWNDIAmiLYEkQocLQxFQdTmDH5AsAZpaBtQTDHeJBlxlLRAD
-AFBLAQIXCxQAAAAIAIxyXUn8cO2LbQAAAKIAAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0
-VVQFAAcmsBRYUEsFBgAAAAABAAEAPgAAAKMAAAAAAA==</Image>
+					<Stereotype name="human agent" alias="Actor/Human Agent" metatype="FMC4SE Human Agent" notes="">
+						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIACxvXU/Wrz0tMwEAAIADAAAHABEAc3RyLmRhdFVUDQAHMkW4XTJFuF0yRbhd
+pZJdS8NAEEXvqwX/Q0hfWhCxxWpVfBLBB5WiQh+ltrENmLQ0oSDif/fsJDEfWilI2Nlk59w7
+s9lNtNBEKwXyFPEWKta+WvqwuEf2mdU31udkPF0yfE3hY6XENV8XObv5lX3REjIlRhX2EW2q
+kfmMUcz4WqijvrrfTBYfYKZkJ5Bz3AOoIx3Y6BHdPORp6rZV6P0gr3F1Xa+UmHtfAzzdOLV4
+TI2m5o79bKCfmDtQros6d2v/sk6c7OhU5+pObs9ux4N/O50Z4e3g1c9J57nNbWhMncjiiFvi
+yJS/HEP6PCVTUKFeyd1wzokplnYr16jeTROTiVjxrZPMo5tri9v6mc8BldxZeo18tZcxb+7m
+uyozq9DWfV6jrXOrUXZZOP+tv6Ku6z+x3YTW/2HFtXTM/Fr6AlBLAQIXCxQAAAAIACxvXU/W
+rz0tMwEAAIADAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAcyRbhdUEsFBgAAAAAB
+AAEAPgAAAGkBAAAAAA==</Image>
 						<AppliesTo>
 							<Apply type="Actor"/>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="paragraph" alias="Paragraph" metatype="FMC4SE Paragraph" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="paragraph" alias="Paragraph" metatype="FMC4SE Paragraph" notes="">
 						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAA
 wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
 wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
@@ -197,57 +135,38 @@ HR0dAAAANzc3wMDAtra2NTU1AAAAAAAAmZmZwMDAwMDAwMDAwMDAwMDAwMDAwMDAHR0dAAAA
 AgICBwcHAgICAAAAAAAAKysrwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAHR0dAAAAAAAAAAAA
 AgICFhYWU1NTtLS0wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
 wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
-wMDAwMDAwMDAwMDAXwBjAG8AbgBuAGUAYwB0AG8AcgAuAFMAdABlAHIAZQBvAHQAeQBwAGUA
-IAA9ACAAJwBlAHgAdABlAG4AZABzACcAKQAgAE8AUgAgAHQAXwBjAG8AbgBuAGUAYwB0AG8A
-cgAuAEMAbwBuAG4AZQBjAHQAbwByAF8AVAB5AHAAZQAgAGkAbgAgACgAJwBHAGUAbgBlAHIA
-YQBsAGkAegBhAHQAaQBvAG4AJwAsACcARQB4AHQAZQBuAHMAaQBvAG4AJwApACkAAAAA
-AA==</Icon>
+wMDAwMDAwMDAwMDA</Icon>
 						<AppliesTo>
 							<Apply type="Object"/>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="referenceOf" alias="Reference of" metatype="FMC4SE Reference of" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="referenceOf" alias="Reference of" metatype="FMC4SE Reference of" notes="">
 						<AppliesTo>
 							<Apply type="Dependency">
 								<Property name="direction" value="Source -&gt; Destination"/>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="satisfy" alias="Satisfies" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="satisfy" alias="Satisfies" notes="">
 						<AppliesTo>
 							<Apply type="Dependency">
 								<Property name="direction" value="Source -&gt; Destination"/>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="specification" alias="Specification" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="specification" alias="Specification" notes="">
 						<AppliesTo>
 							<Apply type="Package">
 								<Property name="URI" value=""/>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="storage" alias="Object/Storage" metatype="FMC4SE Storage" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="storage" alias="Object/Storage" metatype="FMC4SE Storage" notes="">
 						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
 wMDAAAAAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAREREAAAABEREiEREQABESIiIiIREAESIiIiIiEQARIiIiIiIRABEiIi
 IiIhEAESIiIiIiEQARIhESESIRABEiIiIiIhEAESIiIiIiEQARIhERESIRABEiIiIiIhEAES
-IiIiIiEQAREiIiIiERAAERESIRERAAAAAREREAAAwMDAwMDAwMDAwMDAHR0dAAAANzc3wMDA
-wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAHR0dAAAANzc3wMDAwMDAwMDA
-wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAHR0dAAAAHx8fb29vdXV1mJiYwMDAwMDA
-wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAHR0dAAAAAAAAAAAAAAAAAAAAKSkpqKiowMDAwMDA
-wMDAwMDAwMDAwMDAwMDAwMDAHR0dAAAAHBwcYmJiSkpKBAQEAAAAIyMjv7+/wMDAwMDAwMDA
-wMDAwMDAwMDAwMDAHR0dAAAANzc3wMDAwMDAYmJiAAAAAAAAlZWVwMDAwMDAwMDAwMDAwMDA
-wMDAwMDAHR0dAAAANzc3wMDAwMDAfX19AAAAAAAAgICAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
-HR0dAAAANzc3wMDAtra2NTU1AAAAAAAAmZmZwMDAwMDAwMDAwMDAwMDAwMDAwMDAHR0dAAAA
-AgICBwcHAgICAAAAAAAAKysrwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAHR0dAAAAAAAAAAAA
-AgICFhYWU1NTtLS0wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
-wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
-wMDAwMDAwMDAwMDAXwBjAG8AbgBuAGUAYwB0AG8AcgAuAFMAdABlAHIAZQBvAHQAeQBwAGUA
-IAA9ACAAJwBlAHgAdABlAG4AZABzACcAKQAgAE8AUgAgAHQAXwBjAG8AbgBuAGUAYwB0AG8A
-cgAuAEMAbwBuAG4AZQBjAHQAbwByAF8AVAB5AHAAZQAgAGkAbgAgACgAJwBHAGUAbgBlAHIA
-YQBsAGkAegBhAHQAaQBvAG4AJwAsACcARQB4AHQAZQBuAHMAaQBvAG4AJwApACkAAAAA
-AA==</Icon>
+IiIiIiEQAREiIiIiERAAERESIRERAAAAAREREAAA</Icon>
 						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAGxyXUnCaenjhAEAAG4EAAAHABEAc3RyLmRhdFVUDQAH6q8UWOqvFFjqrxRY
 lVNNS8NAFJyrgv+hpJcWWtGC+EVPKih4KPbQY5Gm2lKTlCQqIvnvzrxNsq1abQn7Ntm3M2/e
 RzLM8Iglpmgg4tscMQ6wj0+ze/SOefrC82d6GuhzBZjwfoycNuXXZXl3yO8cA/ONiAj5NUML
@@ -264,6 +183,8 @@ AABzdHIuZGF0VVQFAAfqrxRYUEsFBgAAAAABAAEAPgAAALoBAAAAAA==</Image>
 					</Stereotype>
 				</Stereotypes>
 				<TaggedValueTypes/>
+				<ViewDefinitions/>
+				<Metamodel/>
 				<QuickLink data="Port,channel,Port,channel,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Port,channel,Object,agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,,,,0,,TRUE,,,&#xA;Object,storage,Object,agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,TRUE,,,0,,TRUE,,,&#xA;Object,storage,Port,channel,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,,,,0,,,,,&#xA;Port,channel,Object,storage,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,,,,0,,,,,&#xA;"/>
 			</Content>
 		</UMLProfile>
