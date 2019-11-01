@@ -91,7 +91,9 @@
     <Compile Include="DataModels\TypeDataModel.cs" />
     <Compile Include="FMC4SEAssistantPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuggestionProviders\AbstractSuggestionProvider.cs" />
     <Compile Include="SuggestionProviders\ChannelTypeSuggestionProvider.cs" />
+    <Compile Include="SuggestionProviders\ActorSuggestionProvider.cs" />
     <Compile Include="SuggestionProviders\TypeSuggestionProvider.cs" />
     <Compile Include="ViewModels\AboutBoxViewModel.cs" />
     <Compile Include="ViewModels\ChannelPropertyViewModel.cs" />
@@ -99,6 +101,7 @@
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\NewTypeViewModel.cs" />
     <Compile Include="ViewModels\PropertyViewModel.cs" />
+    <Compile Include="ViewModels\HumanAgentPropertyViewModel.cs" />
     <Compile Include="ViewModels\StoragePropertyViewModel.cs" />
     <Compile Include="Views\AboutBox.xaml.cs">
       <DependentUpon>AboutBox.xaml</DependentUpon>

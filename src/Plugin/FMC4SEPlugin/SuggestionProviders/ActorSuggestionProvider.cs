@@ -4,20 +4,21 @@ using EAAPI = EA;
 
 namespace MDD4All.FMC4SE.Plugin.SuggestionProviders
 {
-    public class ChannelTypeSuggestionProvider : AbstractSuggestionProvider
+    public class ActorSuggestionProvider : AbstractSuggestionProvider
     {
 
-        public ChannelTypeSuggestionProvider(EAAPI.Repository repository)
+        public ActorSuggestionProvider(EAAPI.Repository repository)
         {
             _repository = repository;
 
             _queryString =
-@"select Name, Object_ID from t_object element where
+                @"select Name, Object_ID from t_object element where
 element.Stereotype is null and
-element.Object_Type = 'Interface'";
+element.Object_Type = 'Actor'";
 
             InitializeTypesListFromModel();
         }
+
 
         public override IEnumerable GetSuggestions(string filter)
         {
@@ -31,7 +32,6 @@ element.Object_Type = 'Interface'";
             {
                 result = _typesList;
             }
-
 
             return result;
         }
