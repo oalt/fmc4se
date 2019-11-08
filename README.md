@@ -13,6 +13,9 @@ Hier finden Sie Modelle für Enterprise Architect mit FMC4SE Beispielen und der 
 ## MDG_Technology
 Hier finden Sie den aktuellen Stand der FMC4SE MDG Technology für Enterprise Architect. Diese können Sie direkt über "Resources" als MDG Technology in ihr Modell importieren und dann nutzen.
 
+## Installation
+Freigegebene Versionen von FMC4SE stehen als Windows-Installationsdatei im Projekt unter "Releases" zur Verfügung. Weitere Hinweise zur Installation finden Sie unter https://github.com/oalt/fmc4se/wiki/Installation-instructions (auf English). 
+
 ## Resourcen
 * http://www.mdd4all.de
 * http://www.fmc-modeling.org/
