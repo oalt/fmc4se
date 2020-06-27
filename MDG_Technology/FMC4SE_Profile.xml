@@ -19,22 +19,26 @@ AAAADAAAAAAAAAAAAAAAAAAA</Icon>
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
 wMDAAAAAAAAAAAAAAAAAAP//AAD//wAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMAD
 AAD//wAA//8AAAAAAAAAAAAA</Icon>
-				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAPpdXU+ob7gefQEAADYFAAAHABEAc3RyLmRhdFVUDQAHwSa4XcEmuF3BJrhd
-nVRNS8NAEH3XCv6H0F4sFDFR8QtPQfBgpNhCjyJtTANtUpJVEel/982kdZO2KaaE2a95O/Pm
-7ZAcU7xhgRAO5lzFSHCMI/zo2KL3lacznkf0OLintTEmPoHhmHF3t8IOuDfoq2/EGxPupjiB
-h+4fJsY7Tx4ZM8eQY8Rdm6tv5dBGT+MPkBJn8EVEpuddfkWENbNqPp83ZrSM8c4YRczDJT+b
-e9mIg6/KiB7Nsns4xxVjuJq/hwvcHMzhgVFDqm0YOWWemOtmbEQHYXKtmhzKI1AWokfBQTqi
-GQ+XmgiH6rzN52VVr2SKtHr7ni5HO9u7+yoJ8MEoht6FdvGYZlidrazsr+u0gFV80jvkLLUU
-PJxKd7XwpN1SRsn7/xdVrOqRTVG7XrsY699ItBXb1LZPv2QxxCaqq+i0xpSVF2SqvZOpzoJN
-6JmXummXxmuGITPkkL/R5htYDiOu5J8lWSaaoYPnVY4ObjXHdu377/vMK/xzrSZW/qelqDbi
-kvYLUEsBAhcLFAAAAAgA+l1dT6hvuB59AQAANgUAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5k
-YXRVVAUAB8EmuF1QSwUGAAAAAAEAAQA+AAAAswEAAAAA</Image>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAJahjlBmVQtbRAIAAJoKAAAHABEAc3RyLmRhdFVUDQAHOxmWXjsZll47GZZe
+7VXBTttAEH3XVOIfonABKaqKWwQU9YAiqh4IimqkHBGQNIkwThW7VKjqv/Nm1s7uOpvYFldk
+rXedfTPz5u3MJsMcd/iNKbp44mqBFHv4gH/67vD7Fw7wgzsZbvie8avH1Yva9NCnXQ9jru+J
+mGKFZ9o86N4hH+Ol9NbBBSZ8YvwhPl7HFp9/gz7E/xE+8ekX8yHOC2//i3mKRO2ax8qQ8yvl
+7h2jTRrGMe/MUazqp8pgjlvuJMxmRlQX31QtySylpWTaW0cpbWL+nmOkmDEtJ/yak3W0ZlQi
+m51NjCVxOfUVjv65uFz9yANaJRwr+hRNZEQ45iMsBF3aleo05TNQ/aTO2jOJ8BknekLCpY8v
+OHszn0t6n/JMckZYMp5UXntmpm4inKpWtnba8xkqG9HIcJH6ac/niDoJF38O86rOPws9hMFM
+1bE1sK1HrHU4yyG7MKHPBXOVfnjgyJm5zdrd31WlQ2b4TMQNZ8nT8OkWlWlxV1pjLk4qpjnO
+rHZh2+NClVHVb/uJiuoyQqqPiJGYOfGpKi4KWpx7KoJdas2t9AwEnXLnyanCbfrbqilv3W4A
+5fIZcyX3pcSbaKx9XBfR9vFVo22qUu9jwPiSTaa5LTSbj45n16t/g5u3e4+H/nsMyubU5i7v
+0EsbdDnX3/1VVPUOMiNUIbF2tJz4iLPx6+L8voqKrvJ9+XV9Goi22U2COd6JMn42+8NHGUZ1
+qPpoxo+PuIT8h4d1Kefv9JLwuVCsqCld9Ei/u+3eO7O+M81a3vb7FVBLAQIXCxQAAAAIAJah
+jlBmVQtbRAIAAJoKAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAc7GZZeUEsFBgAA
+AAABAAEAPgAAAHoCAAAAAA==</Image>
 				<AppliesTo>
 					<Apply type="Object"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Multiplicity" type="enumeration" description="" unit="" values="Single,Multiple" default="Single"/>
-					<Tag name="Type" type="enumeration" description="" unit="" values="Standard,Software,Chain,Electronic,Mechanical" default="Standard"/>
+					<Tag name="Type" type="enumeration" description="" unit="" values="Standard,Software,Chain,Electronic,Mechanical,WebService" default="Standard"/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="allocate" alias="Allocate" notes="">
@@ -68,6 +72,35 @@ AQABAD4AAACgAQAAAAA=</Image>
 				<TaggedValues>
 					<Tag name="Type" type="enumeration" description="" unit="" values="ReadWrite,Request,Response,RequestResponse" default="ReadWrite"/>
 				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="cloud" alias="Cloud" metatype="FMC4SE Cloud" notes="">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAA
+wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAmZmZOzs7JSUlJSUl
+JSUlJSUlJSUlJSUlJSUlJSUlKysra2trwMDAwMDAwMDAmZmZVVVV////////////////////
+////////////////////goKCa2trwMDAwMDAOzs7////////////////////////////////
+////////////////KysrwMDAwMDAKioq////////////////////////////////////////
+////////Pz8/wMDAwMDAX19fpaWl////////////////////////////////////ubm5Ojo6
+s7OzwMDAwMDAwMDAPDw8cXFx////////////////////////////////i4uLj4+PwMDAwMDA
+wMDAwMDAwMDAKSkp////////////////////////////////REREwMDAwMDAwMDAwMDAwMDA
+wMDAVlZWubm5////////////////iYmJi4uLREREhYWFwMDAwMDAwMDAwMDAwMDAwMDAycnJ
+OTk5ubm5////////cXFxWFhYl5eXwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAycnJVlZW
+KSkpODg4h4eHwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAwMDAwMDA</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIANy621A0vcibHAEAAMgCAAAHABEAc3RyLmRhdFVUDQAHttT3XrbU91621Pde
+fZJNS8NAEIbfq4L/IaQXC1K03hQPUhRPEvTQo0hbTTBdJVkFkf53n51szIpBlpnsx/sxm9lW
+pR71po0ybZlVcjrQvr4s71nuZqUeOK9BPIPJdEHkWsF08uSG1XnEfoxivV5xGlBdvofrVZjO
+EsaaValDzTX9QaaYBSo10YA51lGMAdszPBU05IWh39Et2Om0T411YnmuWcIPkcVxh9/KdBz3
+qFl1jlnMgZ/OxjSu4KbOY5hrbl0zLg0bKm+o+AW/v7z+fgWY0CsPz3GeMwZMpSf2bmC3hgz/
+PXTI69OwjpMtO7lV33Gnkdt3fhe/Gxxaex+/z9MalszCKwoua3OY6DZ6THRmHkN1vfL//NC3
+UH9rt6ms/lmiOijuiG9QSwECFwsUAAAACADcuttQNL3ImxwBAADIAgAABwAJAAAAAAAAAAAA
+AIAAAAAAc3RyLmRhdFVUBQAHttT3XlBLBQYAAAAAAQABAD4AAABSAQAAAAA=</Image>
+				<AppliesTo>
+					<Apply type="Object"/>
+				</AppliesTo>
 			</Stereotype>
 			<Stereotype name="deploy" alias="Deploy" notes="">
 				<AppliesTo>
@@ -177,6 +210,24 @@ WRyusHrGgkt7aFVNjCsnIrGu6SQis25oOf1ajfoRRhGkxWP7jDHETd3ldYyrtCYoI/vPSt/x
 bqGLM5u8Hs5puzaPHZxy35XJIR2P49yGJWI13qB/KTE1jmX1P9iEVOy4Rm6PU9fDHSqmKqvb
 CyL/Q7lJ1yrwBVBLAQIXCxQAAAAIAGxyXUnCaenjhAEAAG4EAAAHAAkAAAAAAAAAAAAAgAAA
 AABzdHIuZGF0VVQFAAfqrxRYUEsFBgAAAAABAAEAPgAAALoBAAAAAA==</Image>
+				<AppliesTo>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="tool" metatype="Tool" notes="">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
+wMDAAAMDAwACAgIAAAAAAAEBAQAFBQUABAQEAAgICAAGBgYACQkJAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACYAYzAAAAAEM2ATMwAAADMzYAIzQAADMzIAACM0ABMzIAAAAjEC
+MzIAAAAAIQM0AAAAAAAHkkUAAAAAAAAQAAAAAAAAAQUzNhYAAABgACMzM0AABgAAAjNoQQEQ
+AAACMgAHZAAAAAEyAAAAAAAAADNFAAAAAAAAASEA</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAEaq21DA0QqiGgEAAJoCAAAHABEAc3RyLmRhdFVUDQAHi7f3Xou3916Lt/de
+fZJBS8NAEIXfVaH/IaSXFkTUo+KpFDyVooceJTQxXbCJNLmI+N/9ZrJLYhEJuzuZeW/e7Mx2
+OqjQhyplOmIFNfrSTJe6IPKK5x1fjTfTIyvXHmyjnv3E30PEDvsL3l5bR+zglfwdtNCdlhE5
+4J5B7IkV4GoUKjA3uvJ1yz6eifeXwkot3JY6FqCNYeucsSVut+rBNiBzvhET9IbviUo6R7be
+ixPoT8c2RI54cnLb7Y27jNzUp+94Vih03snf8WkNOyzrt6mUrjDXJmrMde8aY3Up8//8FbpW
+f+e3CV7/9STrmHHIZ6v0CVjvCrIGLJtwcJ9ZqXZDWEbTniKHt7DR+uwNZPEL/ppqn2wOr/VZ
+DV206aY9TTtZY6U/UEsBAhcLFAAAAAgARqrbUMDRCqIaAQAAmgIAAAcACQAAAAAAAAAAAACA
+AAAAAHN0ci5kYXRVVAUAB4u3915QSwUGAAAAAAEAAQA+AAAAUAEAAAAA</Image>
 				<AppliesTo>
 					<Apply type="Object"/>
 				</AppliesTo>

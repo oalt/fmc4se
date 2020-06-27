@@ -5,7 +5,6 @@ using System.Linq;
 using MDD4All.EnterpriseArchitect.Manipulations;
 using MDD4All.FMC4SE.Plugin.DataModels;
 using MDD4All.FMC4SE.Plugin.SuggestionProviders;
-using MDD4All.FMC4SE.Plugin.Views;
 using EAAPI = EA;
 
 namespace MDD4All.FMC4SE.Plugin.ViewModels
@@ -27,7 +26,7 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 
 			Kinds = new ObservableCollection<string>
 			{
-				"Standard", "Software", "Chain", "Electronic", "Mechanical"
+				"Standard", "Software", "Chain", "Electronic", "Mechanical", "WebService"
 			};
 			InitializeData();
 
@@ -60,6 +59,10 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 			{ 
 				Name = name;
 			}
+            else
+            {
+                Name = "";
+            }
 
 			Kind = AgentElement.GetTaggedValueString("Type");
 			Notes = AgentElement.Notes;

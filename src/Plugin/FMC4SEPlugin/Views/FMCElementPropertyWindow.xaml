@@ -33,16 +33,19 @@
 		<StackPanel Orientation="Horizontal"
 					Grid.Row="0"
 					Grid.Column="1">
-			<editors:AutoCompleteTextBox HorizontalAlignment="Stretch"
+            <editors:AutoCompleteTextBox x:Name="autocompleteTextBox"
+                                         HorizontalAlignment="Stretch"
 										 Width="320"
 										 Margin="5"
 										 Watermark="Search here"
 										 IconPlacement="Left"
 										 IconVisibility="Visible"
 										 DisplayMember="Name"
-										 Provider="{Binding SuggestionProvider}">
+										 Provider="{Binding SuggestionProvider}"
+                                         Text="{Binding FilterText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                         >
 
-				<editors:AutoCompleteTextBox.LoadingContent>
+                <editors:AutoCompleteTextBox.LoadingContent>
 					<TextBlock Text="Loading..."
                            Margin="5"
                            FontSize="14" />

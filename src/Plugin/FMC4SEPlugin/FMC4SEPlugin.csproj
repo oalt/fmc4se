@@ -98,11 +98,13 @@
     <Compile Include="ViewModels\AboutBoxViewModel.cs" />
     <Compile Include="ViewModels\ChannelPropertyViewModel.cs" />
     <Compile Include="ViewModels\AgentPropertyViewModel.cs" />
+    <Compile Include="ViewModels\CloudPropertyViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\NewTypeViewModel.cs" />
     <Compile Include="ViewModels\PropertyViewModel.cs" />
     <Compile Include="ViewModels\HumanAgentPropertyViewModel.cs" />
     <Compile Include="ViewModels\StoragePropertyViewModel.cs" />
+    <Compile Include="ViewModels\ToolPropertyViewModel.cs" />
     <Compile Include="Views\AboutBox.xaml.cs">
       <DependentUpon>AboutBox.xaml</DependentUpon>
     </Compile>

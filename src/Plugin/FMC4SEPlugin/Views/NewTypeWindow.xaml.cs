@@ -11,7 +11,9 @@ namespace MDD4All.FMC4SE.Plugin.Views
 		public NewTypeWindow()
 		{
 			InitializeComponent();
-		}
+
+            
+        }
 
 		private void okButton_Click(object sender, RoutedEventArgs e)
 		{

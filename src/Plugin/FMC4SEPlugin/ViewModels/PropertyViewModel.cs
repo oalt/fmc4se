@@ -105,6 +105,7 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 		public TypeDataModel Type
 		{
 			get { return _type; }
+
 			set
 			{
 				_type = value;
@@ -112,7 +113,20 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 			}
 		}
 
-		private ISuggestionProvider _suggestionProvider;
+        private string _filterText = "";
+
+        public string FilterText
+        {
+            get { return _filterText; }
+
+            set {
+                _filterText = value;
+                RaisePropertyChanged("FilterText");
+            }
+        }
+
+
+        private ISuggestionProvider _suggestionProvider;
 
 		public ISuggestionProvider SuggestionProvider
 		{
@@ -206,6 +220,8 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 		{
 			NewTypeWindow newTypeWindow = new NewTypeWindow();
 			NewTypeViewModel newTypeViewModel = new NewTypeViewModel();
+
+            newTypeViewModel.Name = FilterText;
 
 			newTypeWindow.DataContext = newTypeViewModel;
 			newTypeWindow.ShowDialog();

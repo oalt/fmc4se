@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Autocomplete.WPF.Editors;
+using GalaSoft.MvvmLight;
 using MDD4All.FMC4SE.Plugin.Controllers;
 using MDD4All.FMC4SE.Plugin.ViewModels;
 using MDD4All.FMC4SE.Plugin.Views;
@@ -133,33 +134,17 @@ namespace MDD4All.FMC4SE.Plugin
 
             EAAPI.Element newElement = repository.GetElementByID(elementId);
 
-            if (newElement.Stereotype == "agent")
-            {
-                repository.SuppressEADialogs = true;
-                FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
-                newAgentWindow.DataContext = new AgentPropertyViewModel(repository, newElement);
-                newAgentWindow.ShowDialog();
+            bool knownType = true;
 
-            }
-            else if (newElement.Stereotype == "channel")
+            ViewModelBase viewModel = null;
+
+            viewModel = GetEditorViewModel(repository, newElement);
+
+            if (viewModel != null)
             {
                 repository.SuppressEADialogs = true;
                 FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
-                newAgentWindow.DataContext = new ChannelPropertyViewModel(repository, newElement);
-                newAgentWindow.ShowDialog();
-            }
-            else if (newElement.Stereotype == "storage")
-            {
-                repository.SuppressEADialogs = true;
-                FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
-                newAgentWindow.DataContext = new StoragePropertyViewModel(repository, newElement);
-                newAgentWindow.ShowDialog();
-            }
-            else if (newElement.Stereotype == "human agent")
-            {
-                repository.SuppressEADialogs = true;
-                FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
-                newAgentWindow.DataContext = new HumanAgentPropertyViewModel(repository, newElement);
+                newAgentWindow.DataContext = viewModel;
                 newAgentWindow.ShowDialog();
             }
 
@@ -182,35 +167,51 @@ namespace MDD4All.FMC4SE.Plugin
             if (objectType == EAAPI.ObjectType.otElement)
             {
                 EAAPI.Element element = repository.GetElementByGuid(guid);
-                if (element.Stereotype == "agent")
+
+                ViewModelBase viewModel = null;
+
+                viewModel = GetEditorViewModel(repository, element);
+
+                if(viewModel != null)
                 {
                     FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
-                    newAgentWindow.DataContext = new AgentPropertyViewModel(repository, element);
-                    newAgentWindow.ShowDialog();
-                    result = true;
-                }
-                else if (element.Stereotype == "channel")
-                {
-                    FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
-                    newAgentWindow.DataContext = new ChannelPropertyViewModel(repository, element);
-                    newAgentWindow.ShowDialog();
-                    result = true;
-                }
-                else if (element.Stereotype == "storage")
-                {
-                    FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
-                    newAgentWindow.DataContext = new StoragePropertyViewModel(repository, element);
-                    newAgentWindow.ShowDialog();
-                    result = true;
-                }
-                else if (element.Stereotype == "human agent")
-                {
-                    FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
-                    newAgentWindow.DataContext = new HumanAgentPropertyViewModel(repository, element);
+                    newAgentWindow.DataContext = viewModel;
                     newAgentWindow.ShowDialog();
                     result = true;
                 }
             }
+            return result;
+        }
+
+        private ViewModelBase GetEditorViewModel(EAAPI.Repository repository, EAAPI.Element element)
+        {
+            ViewModelBase result = null;
+
+            if (element.Stereotype == "agent")
+            {
+                result = new AgentPropertyViewModel(repository, element);
+            }
+            else if (element.Stereotype == "channel")
+            {
+                result = new ChannelPropertyViewModel(repository, element);
+            }
+            else if (element.Stereotype == "storage")
+            {
+                result = new StoragePropertyViewModel(repository, element);
+            }
+            else if (element.Stereotype == "human agent")
+            {
+                result = new HumanAgentPropertyViewModel(repository, element);
+            }
+            else if (element.Stereotype == "cloud")
+            {
+                result = new CloudPropertyViewModel(repository, element);
+            }
+            else if (element.Stereotype == "tool")
+            {
+                result = new ToolPropertyViewModel(repository, element);
+            }
+
             return result;
         }
     }
