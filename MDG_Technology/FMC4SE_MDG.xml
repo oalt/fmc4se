@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<MDG.Technology version="1.0"><Documentation id="FMC4SE" name="FMC4SE" version="1.4" notes="Fundamental Modeling Concept for Systems Engineering"/><UMLProfiles><UMLProfile profiletype="uml2">
+<MDG.Technology version="1.0"><Documentation id="FMC4SE" name="FMC4SE" version="1.5" notes="Fundamental Modeling Concept for Systems Engineering"/><UMLProfiles><UMLProfile profiletype="uml2">
 			<Documentation id="6CE7900F-A" name="FMC4SE" version="1.0" notes="FMC4SE"/>
 			<Content>
 				<Stereotypes>
@@ -7,6 +7,12 @@
 						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
 wMDAAAAAAAAAAAAAAAAAADAAAABAAAAA/gAAAEEAAAAwgAAAAIAAAACMAAAAQgAAAD8AAAAC
 AAAADAAAAAAAAAAAAAAAAAAA</Icon>
+						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAM6oUlLUNzd1oAAAAD4BAAAHABEAc3RyLmRhdFVUDQAHz9YuYM/WLmDP1i5g
+bY+9CgIxEIS/VsF3OKwUBLUWC8XCQkHwCZQLKNwfJioi9+5OEowIx7JkkszszlgunGgwZJRC
+VyqhNwP69ITiWVFjAzMXerLEceMu1SIwfGeppiqrP0cR5hndHC/dDCOGbFhxZCs07tSX2vEI
++lr8GRN1N/M7PzLn4v2z26SJ7mPOvVS5yvtZS+mCvmQnxllvRcrvkxyU1G9xwfvPc6v+AFBL
+AQIXCxQAAAAIAM6oUlLUNzd1oAAAAD4BAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQF
+AAfP1i5gUEsFBgAAAAABAAEAPgAAANYAAAAAAA==</Image>
 						<AppliesTo>
 							<Apply type="Connector">
 								<Property name="_lineStyle" value="orthogonalR"/>
@@ -117,13 +123,22 @@ AIAAAAAAc3RyLmRhdFVUBQAHttT3XlBLBQYAAAAAAQABAD4AAABSAQAAAAA=</Image>
 						</AppliesTo>
 					</Stereotype>
 					<Stereotype name="fmcreq" alias="FMC4SE Requirement" metatype="FMC4SE Requirement" notes="">
+						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAMCkT1K5OYhyjQAAAOYAAAAHABEAc3RyLmRhdFVUDQAHuNsqYLjbKmC42ypg
+PY+7CsJQEERPG8F/kFQRbBK0EEtFrGyiHxDEF6gRE7SQ/LsnD8Ows3vv7Az3FlzIeHJkxN3p
+yoMvQwZNBZ5PRGxUCnby2VPY7L+8qfuB0q23U8jElJC9Sq2HjEWb02YGIlUrWeu5iSW5nLsd
+kTAjNiMR86bHTE1YdN6q6y2v9GR82Mr/F6T9b6LeV1k/UEsBAhcLFAAAAAgAwKRPUrk5iHKN
+AAAA5gAAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB7jbKmBQSwUGAAAAAAEAAQA+
+AAAAwwAAAAAA</Image>
 						<AppliesTo>
-							<Apply type="Requirement"/>
+							<Apply type="Requirement">
+								<Property name="_subtypeProperty" value="FMC4SE::fmcreq::Perspective"/>
+							</Apply>
 						</AppliesTo>
 						<TaggedValues>
 							<Tag name="electronics" type="boolean" description="" unit="" values="true,false" default="false"/>
 							<Tag name="Identifier" type="int" description="" unit="" values="" default=""/>
 							<Tag name="mechanics" type="boolean" description="" unit="" values="true,false" default="false"/>
+							<Tag name="Perspective" type="enumeration" description="" unit="" values="System,User" default="System"/>
 							<Tag name="safety" type="boolean" description="" unit="" values="true,false" default="false"/>
 							<Tag name="software" type="boolean" description="" unit="" values="true,false" default="false"/>
 						</TaggedValues>
@@ -214,24 +229,6 @@ AABzdHIuZGF0VVQFAAfqrxRYUEsFBgAAAAABAAEAPgAAALoBAAAAAA==</Image>
 							<Apply type="Object"/>
 						</AppliesTo>
 					</Stereotype>
-					<Stereotype name="tool" metatype="Tool" notes="">
-						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
-wMDAAAMDAwACAgIAAAAAAAEBAQAFBQUABAQEAAgICAAGBgYACQkJAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAACYAYzAAAAAEM2ATMwAAADMzYAIzQAADMzIAACM0ABMzIAAAAjEC
-MzIAAAAAIQM0AAAAAAAHkkUAAAAAAAAQAAAAAAAAAQUzNhYAAABgACMzM0AABgAAAjNoQQEQ
-AAACMgAHZAAAAAEyAAAAAAAAADNFAAAAAAAAASEA</Icon>
-						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAEaq21DA0QqiGgEAAJoCAAAHABEAc3RyLmRhdFVUDQAHi7f3Xou3916Lt/de
-fZJBS8NAEIXfVaH/IaSXFkTUo+KpFDyVooceJTQxXbCJNLmI+N/9ZrJLYhEJuzuZeW/e7Mx2
-OqjQhyplOmIFNfrSTJe6IPKK5x1fjTfTIyvXHmyjnv3E30PEDvsL3l5bR+zglfwdtNCdlhE5
-4J5B7IkV4GoUKjA3uvJ1yz6eifeXwkot3JY6FqCNYeucsSVut+rBNiBzvhET9IbviUo6R7be
-ixPoT8c2RI54cnLb7Y27jNzUp+94Vih03snf8WkNOyzrt6mUrjDXJmrMde8aY3Up8//8FbpW
-f+e3CV7/9STrmHHIZ6v0CVjvCrIGLJtwcJ9ZqXZDWEbTniKHt7DR+uwNZPEL/ppqn2wOr/VZ
-DV206aY9TTtZY6U/UEsBAhcLFAAAAAgARqrbUMDRCqIaAQAAmgIAAAcACQAAAAAAAAAAAACA
-AAAAAHN0ci5kYXRVVAUAB4u3915QSwUGAAAAAAEAAQA+AAAAUAEAAAAA</Image>
-						<AppliesTo>
-							<Apply type="Object"/>
-						</AppliesTo>
-					</Stereotype>
 				</Stereotypes>
 				<TaggedValueTypes/>
 				<ViewDefinitions/>
@@ -243,19 +240,21 @@ AAAAAHN0ci5kYXRVVAUAB4u3915QSwUGAAAAAAEAAQA+AAAAUAEAAAAA</Image>
 			<Documentation id="14B9E5AE-A" name="FMC4SE" version="1.0" notes="FMC4SE"/>
 			<Content>
 				<Stereotypes>
-					<Stereotype name="FMC4SE" alias="FMC Diagram" notes="FMC Diagram." bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+					<Stereotype name="FMC4SE" alias="FMC Diagram" notes="FMC Diagram.">
 						<AppliesTo>
 							<Apply type="Diagram_Object">
 								<Property name="alias" value="FMC4SE"/>
-								<Property name="pdata" value="HideStereo=0;HideEStereo=1;"/>
-								<Property name="styleex" value="HideConnStereotype=1;"/>
 								<Property name="diagramID" value="FMC"/>
+								<Property name="pdata" value="HideStereo=0;HideEStereo=1;"/>
+								<Property name="styleex" value="HideConnStereotype=0;"/>
 								<Property name="toolbox" value="FMC4SE"/>
 							</Apply>
 						</AppliesTo>
 					</Stereotype>
 				</Stereotypes>
 				<TaggedValueTypes/>
+				<ViewDefinitions/>
+				<Metamodel/>
 			</Content>
 		</UMLProfile>
 	</DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
@@ -270,14 +269,6 @@ AAAAAHN0ci5kYXRVVAUAB4u3915QSwUGAAAAAAEAAQA+AAAAUAEAAAAA</Image>
 							<Tag name="FMC4SE::allocate(UML::Dependency)" type="" description="" unit="" values="" default="Allocation"/>
 							<Tag name="FMC4SE::deploy(UML::Dependency)" type="" description="" unit="" values="" default="Deploy"/>
 							<Tag name="FMC4SE::referenceOf(UML::Dependency)" type="" description="" unit="" values="" default="Reference of"/>
-						</TaggedValues>
-					</Stereotype>
-					<Stereotype name="FMC4SE BPMN Extensions" notes="FMC4SE BPMN Extensions">
-						<AppliesTo>
-							<Apply type="ToolboxPage"/>
-						</AppliesTo>
-						<TaggedValues>
-							<Tag name="FMC4SE::tool(UML::Object)" type="" description="" unit="" values="" default="Tool"/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="FMC4SE Requirements" notes="FMC4SE Requirements">
@@ -376,16 +367,6 @@ wMDAAAAAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAREREAAAABEREiEREQABESIiIiIREAESIiIiIiEQARIiIiIiIRABEiIi
 IiIhEAESIiIiIiEQARIhESESIRABEiIiIiIhEAESIiIiIiEQARIhERESIRABEiIiIiIhEAES
 IiIiIiEQAREiIiIiERAAERESIRERAAAAAREREAAA</Icon>
-						<AppliesTo>
-							<Apply type="ToolboxItemImage"/>
-						</AppliesTo>
-					</Stereotype>
-					<Stereotype name="FMC4SE::tool(UML::Object)" notes="">
-						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
-wMDAAAMDAwACAgIAAAAAAAEBAQAFBQUABAQEAAgICAAGBgYACQkJAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAACYAYzAAAAAEM2ATMwAAADMzYAIzQAADMzIAACM0ABMzIAAAAjEC
-MzIAAAAAIQM0AAAAAAAHkkUAAAAAAAAQAAAAAAAAAQUzNhYAAABgACMzM0AABgAAAjNoQQEQ
-AAACMgAHZAAAAAEyAAAAAAAAADNFAAAAAAAAASEA</Icon>
 						<AppliesTo>
 							<Apply type="ToolboxItemImage"/>
 						</AppliesTo>

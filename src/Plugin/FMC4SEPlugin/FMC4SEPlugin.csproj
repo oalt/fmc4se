@@ -88,6 +88,7 @@
   <ItemGroup>
     <Compile Include="Controllers\ChannelDataTransferHelper.cs" />
     <Compile Include="Controllers\ReferenceSynchronizer.cs" />
+    <Compile Include="Converters\DirectionToRadioButtonStateConverter.cs" />
     <Compile Include="DataModels\TypeDataModel.cs" />
     <Compile Include="FMC4SEAssistantPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="ViewModels\ChannelPropertyViewModel.cs" />
     <Compile Include="ViewModels\AgentPropertyViewModel.cs" />
     <Compile Include="ViewModels\CloudPropertyViewModel.cs" />
+    <Compile Include="ViewModels\ConnectorDirectionViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\NewTypeViewModel.cs" />
     <Compile Include="ViewModels\PropertyViewModel.cs" />
@@ -107,6 +109,9 @@
     <Compile Include="ViewModels\ToolPropertyViewModel.cs" />
     <Compile Include="Views\AboutBox.xaml.cs">
       <DependentUpon>AboutBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConnectorDirectionWindow.xaml.cs">
+      <DependentUpon>ConnectorDirectionWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FMCElementPropertyWindow.xaml.cs">
       <DependentUpon>FMCElementPropertyWindow.xaml</DependentUpon>
@@ -117,6 +122,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\AboutBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ConnectorDirectionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,6 +154,7 @@
   <ItemGroup>
     <Resource Include="Assets\fmc4se.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

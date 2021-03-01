@@ -1,7 +1,9 @@
-﻿using GalaSoft.MvvmLight;
+﻿using EA;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using MDD4All.FMC4SE.Plugin.Controllers;
 using MDD4All.FMC4SE.Plugin.Views;
+using System;
 using System.Windows;
 using System.Windows.Input;
 using EAAPI = EA;
@@ -22,10 +24,14 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 
             ShowAboutWindowCommand = new RelayCommand(ExcuteShowAboutWindow);
             SynchronizeReferenceCommand = new RelayCommand(ExecuteSynchronizeReference);
+            ShowConnectorDirectionDialogCommand = new RelayCommand<EAAPI.Connector>(ExecuteShowConnectorDirectionCommand);
         }
+
+        
 
         public ICommand ShowAboutWindowCommand { get; private set; }
         public ICommand SynchronizeReferenceCommand { get; private set; }
+        public ICommand ShowConnectorDirectionDialogCommand { get; private set; }
 
         private void ExcuteShowAboutWindow()
         {
@@ -54,6 +60,16 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
                 }
                
             }
+        }
+
+        private void ExecuteShowConnectorDirectionCommand(EAAPI.Connector connector)
+        {
+            ConnectorDirectionViewModel connectorDirectionViewModel = new ConnectorDirectionViewModel(connector);
+
+            ConnectorDirectionWindow connectorDirectionWindow = new ConnectorDirectionWindow();
+            connectorDirectionWindow.DataContext = connectorDirectionViewModel;
+
+            connectorDirectionWindow.ShowDialog();
         }
     }
 }

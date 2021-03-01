@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows;
 using Autocomplete.WPF.Editors;
 using GalaSoft.MvvmLight;
 using MDD4All.FMC4SE.Plugin.Controllers;
@@ -158,6 +159,14 @@ namespace MDD4All.FMC4SE.Plugin
 
             _channelDataTransferHelper.SetPropertyTypeAndDirectionOnFlowPortCreation(connectorId, "channel", "access type", "FMC4SE Channel");
 
+            EAAPI.Connector connector = repository.GetConnectorByID(connectorId) as EAAPI.Connector;
+            if (connector != null && connector.Stereotype == "access type" && _mainViewModel != null)
+            {
+                _mainViewModel.ShowConnectorDirectionDialogCommand.Execute(connector);
+            }
+
+            
+
             return result;
         }
 
@@ -177,6 +186,17 @@ namespace MDD4All.FMC4SE.Plugin
                     FMCElementPropertyWindow newAgentWindow = new FMCElementPropertyWindow();
                     newAgentWindow.DataContext = viewModel;
                     newAgentWindow.ShowDialog();
+                    repository.AdviseElementChange(element.ElementID);
+                    result = true;
+                }
+            }
+            else if(objectType == EAAPI.ObjectType.otConnector)
+            {
+                EAAPI.Connector connector = repository.GetConnectorByGuid(guid) as EAAPI.Connector;
+                if (connector != null && connector.Stereotype == "access type" && _mainViewModel != null)
+                {
+                    _mainViewModel.ShowConnectorDirectionDialogCommand.Execute(connector);
+                    repository.AdviseConnectorChange(connector.ConnectorID);
                     result = true;
                 }
             }

@@ -13,14 +13,6 @@
 					<Tag name="FMC4SE::referenceOf(UML::Dependency)" type="" description="" unit="" values="" default="Reference of"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="FMC4SE BPMN Extensions" notes="FMC4SE BPMN Extensions">
-				<AppliesTo>
-					<Apply type="ToolboxPage"/>
-				</AppliesTo>
-				<TaggedValues>
-					<Tag name="FMC4SE::tool(UML::Object)" type="" description="" unit="" values="" default="Tool"/>
-				</TaggedValues>
-			</Stereotype>
 			<Stereotype name="FMC4SE Requirements" notes="FMC4SE Requirements">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
@@ -117,16 +109,6 @@ wMDAAAAAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAREREAAAABEREiEREQABESIiIiIREAESIiIiIiEQARIiIiIiIRABEiIi
 IiIhEAESIiIiIiEQARIhESESIRABEiIiIiIhEAESIiIiIiEQARIhERESIRABEiIiIiIhEAES
 IiIiIiEQAREiIiIiERAAERESIRERAAAAAREREAAA</Icon>
-				<AppliesTo>
-					<Apply type="ToolboxItemImage"/>
-				</AppliesTo>
-			</Stereotype>
-			<Stereotype name="FMC4SE::tool(UML::Object)" notes="">
-				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
-wMDAAAMDAwACAgIAAAAAAAEBAQAFBQUABAQEAAgICAAGBgYACQkJAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAACYAYzAAAAAEM2ATMwAAADMzYAIzQAADMzIAACM0ABMzIAAAAjEC
-MzIAAAAAIQM0AAAAAAAHkkUAAAAAAAAQAAAAAAAAAQUzNhYAAABgACMzM0AABgAAAjNoQQEQ
-AAACMgAHZAAAAAEyAAAAAAAAADNFAAAAAAAAASEA</Icon>
 				<AppliesTo>
 					<Apply type="ToolboxItemImage"/>
 				</AppliesTo>
