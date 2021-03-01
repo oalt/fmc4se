@@ -3,7 +3,7 @@
 	<Documentation id="6CE7900F-A" name="FMC4SE" version="1.0" notes="FMC4SE"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="access type" alias="Access Type" metatype="FMC4SE Access Type Connection" notes="">
+			<Stereotype name="access type" alias="Access Type" metatype="FMC4SE Access Type Connection" notes="" cx="0" cy="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
 wMDAAAAAAAAAAAAAAAAAADAAAABAAAAA/gAAAEEAAAAwgAAAAIAAAACMAAAAQgAAAD8AAAAC
 AAAADAAAAAAAAAAAAAAAAAAA</Icon>
@@ -15,13 +15,13 @@ AQIXCxQAAAAIAM6oUlLUNzd1oAAAAD4BAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQF
 AAfP1i5gUEsFBgAAAAABAAEAPgAAANYAAAAAAA==</Image>
 				<AppliesTo>
 					<Apply type="Connector">
-						<Property name="_lineStyle" value="orthogonalR"/>
 						<Property name="direction" value="Unspecified"/>
 						<Property name="kind" value=""/>
+						<Property name="_lineStyle" value="orthogonalR"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="agent" alias="Component/Agent" metatype="FMC4SE Agent" notes="">
+			<Stereotype name="agent" alias="Component/Agent" metatype="FMC4SE Agent" notes="" cx="0" cy="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
 wMDAAAAAAAAAAAAAAAAAAP//AAD//wAAwAMAAMADAADAAwAAwAMAAMADAADAAwAAwAMAAMAD
 AAD//wAA//8AAAAAAAAAAAAA</Icon>
@@ -43,18 +43,18 @@ AAABAAEAPgAAAHoCAAAAAA==</Image>
 					<Apply type="Object"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="Multiplicity" type="enumeration" description="" unit="" values="Single,Multiple" default="Single"/>
 					<Tag name="Type" type="enumeration" description="" unit="" values="Standard,Software,Chain,Electronic,Mechanical,WebService" default="Standard"/>
+					<Tag name="Multiplicity" type="enumeration" description="" unit="" values="Single,Multiple" default="Single"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="allocate" alias="Allocate" notes="">
+			<Stereotype name="allocate" alias="Allocate" notes="" cx="0" cy="0">
 				<AppliesTo>
 					<Apply type="Dependency">
 						<Property name="direction" value="Source -&gt; Destination"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="channel" alias="Channel" metatype="FMC4SE Channel" notes="">
+			<Stereotype name="channel" alias="Channel" metatype="FMC4SE Channel" notes="" cx="0" cy="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
 wMDAAAAAAAAB/wAAAf8AAAGAAAAH4AAAD/AAABw4AAAYGAAAGBgAABgYAAAYGAAAHDgAAA/w
 AAAH4AAAAYAAAAH/AAAB/wAA</Icon>
@@ -79,7 +79,7 @@ AQABAD4AAACgAQAAAAA=</Image>
 					<Tag name="Type" type="enumeration" description="" unit="" values="ReadWrite,Request,Response,RequestResponse" default="ReadWrite"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="cloud" alias="Cloud" metatype="FMC4SE Cloud" notes="">
+			<Stereotype name="cloud" alias="Cloud" metatype="FMC4SE Cloud" notes="" cx="0" cy="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAA
 wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
 wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
@@ -108,21 +108,41 @@ AIAAAAAAc3RyLmRhdFVUBQAHttT3XlBLBQYAAAAAAQABAD4AAABSAQAAAAA=</Image>
 					<Apply type="Object"/>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="deploy" alias="Deploy" notes="">
+			<Stereotype name="deploy" alias="Deploy" notes="" cx="0" cy="0">
 				<AppliesTo>
 					<Apply type="Dependency">
 						<Property name="direction" value="Source -&gt; Destination"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="deriveReqt" alias="Derives" notes="">
+			<Stereotype name="deriveReqt" alias="Derives" notes="" cx="0" cy="0">
 				<AppliesTo>
 					<Apply type="Dependency">
 						<Property name="direction" value="Source -&gt; Destination"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="fmcreq" alias="FMC4SE Requirement" metatype="FMC4SE Requirement" notes="">
+			<Stereotype name="explicitChannel" alias="Channel" metatype="FMC4SE Explicit Channel" notes="" cx="35" cy="35">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
+wMDAAAAAAAAAAAAAD+AAAB/4AAA4PAAAcAwAAGAOAADgBgAAwAYAAMAGAADABgAAYAYAAGAO
+AABwHAAAPHgAAB/wAAADwAAA</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAJRyYVIlDvEJNgEAALgDAAAHABEAc3RyLmRhdFVUDQAHGvg8YBr4PGAa+Dxg
+rZJBS8NAEIXftYL/IaSXFkStR0UvIniS2go9irbaBNK0ZqNQpP/db6eJWauWChJ2MrvzZt57
+2TgletBCT4o0I0uVa197erfY0pvuOc04n1I5V6wx2FwlsWB3VuGSL7gIZPQrNoxDaqX6hhvR
+PWGXqKMTdT/xNfaK+Z5hIQe+o2Md2OoRm3fTt46pnsFeo87pjjhlF5MtzXVMn1c6IH/RK9Gh
+IGZKt+qvv0QLfGHfp7QJA/TcGnJT5+rPzI6TOZO9r125h//E3bjeTckRj6+WMKR2I2M6MlYB
+R8/uwa9Q26b6i63am7hi+bcL/tKM7JEss0qtK/Tbh21u6ALGpXHmVGaB85+81fx+tncYffPu
+J699jMi8Is8yMYa2biqOtk6No3FYT97ef2neHI93k5r+w2BqM3GlD1BLAQIXCxQAAAAIAJRy
+YVIlDvEJNgEAALgDAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAca+DxgUEsFBgAA
+AAABAAEAPgAAAGwBAAAAAA==</Image>
+				<AppliesTo>
+					<Apply type="Object"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Type" type="enumeration" description="" unit="" values="ReadWrite,Request,Response,RequestResponse" default="ReadWrite"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="fmcreq" alias="FMC4SE Requirement" metatype="FMC4SE Requirement" notes="" cx="0" cy="0">
 				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAMCkT1K5OYhyjQAAAOYAAAAHABEAc3RyLmRhdFVUDQAHuNsqYLjbKmC42ypg
 PY+7CsJQEERPG8F/kFQRbBK0EEtFrGyiHxDEF6gRE7SQ/LsnD8Ows3vv7Az3FlzIeHJkxN3p
 yoMvQwZNBZ5PRGxUCnby2VPY7L+8qfuB0q23U8jElJC9Sq2HjEWb02YGIlUrWeu5iSW5nLsd
@@ -135,15 +155,15 @@ AAAAwwAAAAAA</Image>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="electronics" type="boolean" description="" unit="" values="true,false" default="false"/>
 					<Tag name="Identifier" type="int" description="" unit="" values="" default=""/>
-					<Tag name="mechanics" type="boolean" description="" unit="" values="true,false" default="false"/>
-					<Tag name="Perspective" type="enumeration" description="" unit="" values="System,User" default="System"/>
-					<Tag name="safety" type="boolean" description="" unit="" values="true,false" default="false"/>
 					<Tag name="software" type="boolean" description="" unit="" values="true,false" default="false"/>
+					<Tag name="electronics" type="boolean" description="" unit="" values="true,false" default="false"/>
+					<Tag name="mechanics" type="boolean" description="" unit="" values="true,false" default="false"/>
+					<Tag name="safety" type="boolean" description="" unit="" values="true,false" default="false"/>
+					<Tag name="Perspective" type="enumeration" description="" unit="" values="System,User" default="System"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="heading" alias="Heading" metatype="FMC4SE Heading" notes="">
+			<Stereotype name="heading" alias="Heading" metatype="FMC4SE Heading" notes="" cx="0" cy="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
 wMDAAF9fXwA1NTUAnp6eAHx8fACDg4MAOzs7AAAAAACSkpIAYmJiAGxsbAAsLCwAHR0dAH9/
 fwCqqqoAl5eXAAAAAAAAAAAAAAAAAAAAAAAADZ4AAInwAAAGeAAAl6AAAAZ4AACXoAAABngA
@@ -153,7 +173,7 @@ eAAAl6AAAAEjAABCUAAAAAAAAAAAAAAAAAAAAAAA</Icon>
 					<Apply type="Object"/>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="human agent" alias="Actor/Human Agent" metatype="FMC4SE Human Agent" notes="">
+			<Stereotype name="human agent" alias="Actor/Human Agent" metatype="FMC4SE Human Agent" notes="" cx="0" cy="0">
 				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIACxvXU/Wrz0tMwEAAIADAAAHABEAc3RyLmRhdFVUDQAHMkW4XTJFuF0yRbhd
 pZJdS8NAEEXvqwX/Q0hfWhCxxWpVfBLBB5WiQh+ltrENmLQ0oSDif/fsJDEfWilI2Nlk59w7
 s9lNtNBEKwXyFPEWKta+WvqwuEf2mdU31udkPF0yfE3hY6XENV8XObv5lX3REjIlRhX2EW2q
@@ -167,7 +187,7 @@ AAEAPgAAAGkBAAAAAA==</Image>
 					<Apply type="Actor"/>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="paragraph" alias="Paragraph" metatype="FMC4SE Paragraph" notes="">
+			<Stereotype name="paragraph" alias="Paragraph" metatype="FMC4SE Paragraph" notes="" cx="0" cy="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAA
 wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
 wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
@@ -188,28 +208,28 @@ wMDAwMDAwMDAwMDA</Icon>
 					<Apply type="Object"/>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="referenceOf" alias="Reference of" metatype="FMC4SE Reference of" notes="">
+			<Stereotype name="referenceOf" alias="Reference of" metatype="FMC4SE Reference of" notes="" cx="0" cy="0">
 				<AppliesTo>
 					<Apply type="Dependency">
 						<Property name="direction" value="Source -&gt; Destination"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="satisfy" alias="Satisfies" notes="">
+			<Stereotype name="satisfy" alias="Satisfies" notes="" cx="0" cy="0">
 				<AppliesTo>
 					<Apply type="Dependency">
 						<Property name="direction" value="Source -&gt; Destination"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="specification" alias="Specification" notes="">
+			<Stereotype name="specification" alias="Specification" notes="" cx="0" cy="0">
 				<AppliesTo>
 					<Apply type="Package">
 						<Property name="URI" value=""/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="storage" alias="Object/Storage" metatype="FMC4SE Storage" notes="">
+			<Stereotype name="storage" alias="Object/Storage" metatype="FMC4SE Storage" notes="" cx="0" cy="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAA
 wMDAAAAAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAREREAAAABEREiEREQABESIiIiIREAESIiIiIiEQARIiIiIiIRABEiIi
@@ -233,6 +253,6 @@ AABzdHIuZGF0VVQFAAfqrxRYUEsFBgAAAAABAAEAPgAAALoBAAAAAA==</Image>
 		<TaggedValueTypes/>
 		<ViewDefinitions/>
 		<Metamodel/>
-		<QuickLink data="Port,channel,Port,channel,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Port,channel,Object,agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,,,,0,,TRUE,,,&#xA;Object,storage,Object,agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,TRUE,,,0,,TRUE,,,&#xA;Object,storage,Port,channel,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,,,,0,,,,,&#xA;Port,channel,Object,storage,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,,,,0,,,,,&#xA;"/>
+		<QuickLink data="Port,channel,Port,channel,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Port,channel,Object,agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,TRUE,,,0,,TRUE,,,&#xA;Object,storage,Object,agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,TRUE,,,0,,TRUE,,,&#xA;Port,channel,Actor,human agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,TRUE,,,0,,TRUE,,,&#xA;Object,storage,Object,agent,,Port,channel,Connector,access type,directed,,New Channel Connection,TRUE,TRUE,TRUE,,,0,,TRUE,,,&#xA;Port,channel,Object,storage,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Object,agent,Object,agent,,,,Composition,,directed,Composition,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Object,agent,Requirement,,,,,Dependency,satisfy,directed,satisfies,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Object,storage,Requirement,,,,,Dependency,satisfy,directed,satisfies,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Port,channel,Requirement,,,,,Dependency,satisfy,directed,satisfies,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Object,agent,,,,Requirement,fmcreq,Dependency,satisfy,directed,,New Requirement,TRUE,TRUE,TRUE,,,0,,,,,&#xA;Object,storage,,,,Requirement,fmcreq,Dependency,satisfy,directed,,New Requirement,TRUE,TRUE,TRUE,,,0,,,,,&#xA;Port,channel,,,,Requirement,fmcreq,Dependency,satisfy,directed,,New Requirement,TRUE,TRUE,TRUE,,,0,,,,,&#xA;Requirement,,Requirement,,,,,Dependency,deriveReqt,directed,derives,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Object,agent,Object,explicitChannel,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Object,explicitChannel,Object,agent,,,,Connector,access type,directed,FMC Connector,,TRUE,FALSE,TRUE,,,0,,,,,&#xA;Object,agent,,,,Object,explicitChannel,Connector,access type,directed,,New explicit FMC Channel,TRUE,TRUE,TRUE,,,0,,,,,&#xA;Object,explicitChannel,,,,Object,agent,Connector,access type,directed,,New FMC Agent,TRUE,TRUE,TRUE,,,0,,,,,&#xA;Object,explicitChannel,,,,Actor,human agent,Connector,access type,directed,,New FMC Human Agent,TRUE,TRUE,TRUE,,,0,,,,,&#xA;"/>
 	</Content>
 </UMLProfile>

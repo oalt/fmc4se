@@ -231,6 +231,10 @@ namespace MDD4All.FMC4SE.Plugin
             {
                 result = new ToolPropertyViewModel(repository, element);
             }
+            else if (element.Stereotype == "explicitChannel")
+            {
+                result = new ChannelPropertyViewModel(repository, element);
+            }
 
             return result;
         }

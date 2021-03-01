@@ -56,7 +56,7 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 			
 
 			string name = AgentElement.Name;
-			if (!name.StartsWith("FMC4SE Channel"))
+			if (!name.StartsWith("FMC4SE Channel") && !name.StartsWith("FMC4SE Explicit Channel"))
 			{ 
 				Name = name;
 			}
@@ -74,7 +74,14 @@ namespace MDD4All.FMC4SE.Plugin.ViewModels
 
 			if (Type != null)
 			{
-				AgentElement.PropertyType = Type.ElementID;
+				if (AgentElement.Type == "Object")
+				{
+					AgentElement.ClassifierID = Type.ElementID;
+				}
+				else
+				{
+					AgentElement.PropertyType = Type.ElementID;
+				}
 				AgentElement.Name = Name;
 				AgentElement.Notes = Notes;
 				AgentElement.Update();

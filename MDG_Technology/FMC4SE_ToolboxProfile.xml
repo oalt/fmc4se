@@ -13,6 +13,14 @@
 					<Tag name="FMC4SE::referenceOf(UML::Dependency)" type="" description="" unit="" values="" default="Reference of"/>
 				</TaggedValues>
 			</Stereotype>
+			<Stereotype name="FMC4SE Classic FMC" notes="">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="FMC4SE::explicitChannel(UML::Object)" type="" description="" unit="" values="" default="FMC Channel"/>
+				</TaggedValues>
+			</Stereotype>
 			<Stereotype name="FMC4SE Requirements" notes="FMC4SE Requirements">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
@@ -68,6 +76,14 @@ KSkpODg4h4eHwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
 wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
 wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
 wMDAwMDAwMDAwMDA</Icon>
+				<AppliesTo>
+					<Apply type="ToolboxItemImage"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="FMC4SE::explicitChannel(UML::Object)" notes="">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1+AAAAAAAAAD4AAAAoAAAAEAAAABAAAAABAAEAAAAAAEAAAAAAAAAAAAAAAAIAAAAAAAAA
+wMDAAAAAAAAAAAAAD+AAAB/4AAA4PAAAcAwAAGAOAADgBgAAwAYAAMAGAADABgAAYAYAAGAO
+AABwHAAAPHgAAB/wAAADwAAA</Icon>
 				<AppliesTo>
 					<Apply type="ToolboxItemImage"/>
 				</AppliesTo>
