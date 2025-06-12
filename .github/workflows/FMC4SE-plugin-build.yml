@@ -26,7 +26,7 @@ jobs:
         
       - name: Read VERSION file
         id: file-version
-        run: echo ./src/Plugin/version.txt
+        run: type .\src\Plugin\version.txt
 
       - name: Set version as environment variable
         env:
