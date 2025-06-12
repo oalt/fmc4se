@@ -31,7 +31,7 @@ jobs:
         run: set /p FILE_VERSION_OUT=<version.txt
 
       - name: Set version as environment variable
-        run: echo "VERSION=$(echo ${{env:FILE_VERSION_OUT}}.${{GITHUB_RUN_NUMBER}})" >> $GITHUB_ENV
+        run: echo ("VERSION=" + $env:FILE_VERSION_OUT + "." + $env:GITHUB_RUN_NUMBER)" >> $GITHUB_ENV
         
       - name: Echo version number
         run: echo ${{env:VERSION}}
