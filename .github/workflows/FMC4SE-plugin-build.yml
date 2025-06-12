@@ -29,9 +29,7 @@ jobs:
         run: type .\src\Plugin\version.txt >> $GITHUB_OUTPUT
 
       - name: Set version as environment variable
-        env:
-          FILE_VERSION: ${{steps.file-version.outputs}}
-        run: echo ("VERSION=" + $env:FILE_VERSION + "." + $env:GITHUB_RUN_NUMBER) >> $GITHUB_ENV
+        run: echo ("VERSION=" + ${{steps.file-version.outputs}} + "." + $env:GITHUB_RUN_NUMBER) >> $GITHUB_ENV
         
       - name: Echo version number
         run: echo $env:VERSION
