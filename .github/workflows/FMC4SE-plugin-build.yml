@@ -31,10 +31,10 @@ jobs:
         run: set /p FILE_VERSION_OUT=<version.txt
 
       - name: Set version as environment variable
-        run: echo "VERSION=$(echo $env:FILE_VERSION_OUT.$GITHUB_RUN_NUMBER)" >> $GITHUB_ENV
+        run: echo "VERSION=$(echo ${{env:FILE_VERSION_OUT}}.${{GITHUB_RUN_NUMBER}})" >> $GITHUB_ENV
         
       - name: Echo version number
-        run: echo $env:VERSION
+        run: echo ${{env:VERSION}}
 
       - name: Update Assembly info versions
         uses: Amadevus/pwsh-script@v2
@@ -65,7 +65,7 @@ jobs:
             }
 
       - name: Restore Packages
-        run: nuget restore ${SOLUTION_NAME}
+        run: nuget restore ${env:SOLUTION_NAME}
 
       - name: Build Solution
         run: |
