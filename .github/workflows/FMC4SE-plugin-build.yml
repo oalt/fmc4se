@@ -25,15 +25,15 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
         
       - name: Read VERSION file
+        shell: pwsh
         run: |
-          {
               $ver = get-content .\src\Plugin\version.txt
               echo $ver
-              echo ("FILE_VERSION=" + $ver) >> $GITHUB_ENV
-          }
+              echo "FILE_VERSION=$ver" >> $env:GITHUB_ENV
+          
 
       - name: Set version as environment variable
-        run: echo ("VERSION=" + $env:FILE_VERSION + "." + $env:GITHUB_RUN_NUMBER) >> $GITHUB_ENV
+        run: echo ("VERSION=" + $env:FILE_VERSION + "." + $env:GITHUB_RUN_NUMBER) >> $env:GITHUB_ENV
         
       - name: Echo version number
         run: echo $env:VERSION
