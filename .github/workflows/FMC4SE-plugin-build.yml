@@ -71,4 +71,4 @@ jobs:
 
       - name: Build Solution
         run: |
-          msbuild.exe /p:configuration=Release /p:Version=${{env.VERSION}} .\src\Plugin\${{env.SOLUTION_NAME}}
+          msbuild.exe /p:configuration=Release /p:platform='Any CPU' /p:installerFileVersion=${{env.VERSION}} .\src\Plugin\${{env.SOLUTION_NAME}}
