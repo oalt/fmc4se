@@ -26,7 +26,7 @@ jobs:
         
       - name: Read VERSION file
         uses: Amadevus/pwsh-script@v2
-        id: script
+        id: version-script
         with:
           script: |
             $ver = get-content .\src\Plugin\version.txt
