@@ -26,11 +26,11 @@ jobs:
         
       - name: Read VERSION file
         id: file-version
-        run: type .\src\Plugin\version.txt
+        run: type .\src\Plugin\version.txt >> $GITHUB_OUTPUT
 
       - name: Set version as environment variable
         env:
-          FILE_VERSION: ${{steps.file-version.outputs.results}}
+          FILE_VERSION: ${{steps.file-version.outputs}}
         run: echo ("VERSION=" + $env:FILE_VERSION + "." + $env:GITHUB_RUN_NUMBER) >> $GITHUB_ENV
         
       - name: Echo version number
@@ -69,4 +69,4 @@ jobs:
 
       - name: Build Solution
         run: |
-          msbuild.exe /p:configuration=Release /p:Version=${{env.VERSION}} ./src/Plugin/${{env.SOLUTION_NAME}}
+          msbuild.exe /p:configuration=Release /p:Version=${{env.VERSION}} .\src\Plugin\${{env.SOLUTION_NAME}}
