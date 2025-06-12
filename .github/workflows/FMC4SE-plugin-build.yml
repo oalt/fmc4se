@@ -1,0 +1,72 @@
+name: Build FMC4SE Plugin
+
+on:  
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:  
+  build:    
+    runs-on: windows-latest
+    env:
+      SOLUTION_NAME: FMC4SEPlugin.sln
+
+    steps:      
+      - name: Checkout source code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1
+
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5
+
+      - name: Navigate to Workspace
+        run: cd ${{GITHUB_WORKSPACE}}/src/Plugin
+        
+      - name: Read VERSION file
+        run: set /p FILE_VERSION_OUT=<version.txt
+
+      - name: Set version as environment variable
+        run: echo "VERSION=$(echo $env:FILE_VERSION_OUT.$GITHUB_RUN_NUMBER)" >> $GITHUB_ENV
+        
+      - name: Echo version number
+        run: echo $env:VERSION
+
+      - name: Update Assembly info versions
+        uses: Amadevus/pwsh-script@v2
+        id: script
+        with:
+          script: |
+            function Update-SourceVersion
+            {
+                Param ([string]$Version)
+                $NewVersion = 'AssemblyVersion("' + $Version + '")';
+                Write-output $NewVersion
+                $NewFileVersion = 'AssemblyFileVersion("' + $Version + '")';
+                foreach ($o in $input) 
+                {
+                    Write-output $o.FullName
+                    $TmpFile = $o.FullName + ".tmp"
+                    get-content $o.FullName | 
+                    %{$_ -replace 'AssemblyVersion\("[0-9]+(\.([0-9]+|\*)){1,3}"\)', $NewVersion } |
+                    %{$_ -replace 'AssemblyFileVersion\("[0-9]+(\.([0-9]+|\*)){1,3}"\)', $NewFileVersion }  > $TmpFile
+
+                    move-item $TmpFile $o.FullName -force
+                }
+            }
+            Write-output 'Modifiing AssemblyInfos.'
+            foreach ($file in "AssemblyInfo.cs", "AssemblyInfo.vb" ) 
+            {
+                get-childitem -recurse |? {$_.Name -eq $file} | Update-SourceVersion $env:VERSION;
+            }
+
+      - name: Restore Packages
+        run: nuget restore ${SOLUTION_NAME}
+
+      - name: Build Solution
+        run: |
+          msbuild.exe /p:configuration=Release /p:Version=${{env.VERSION}} ${{SOLUTION_NAME}}
