@@ -26,10 +26,12 @@ jobs:
         
       - name: Read VERSION file
         id: file-version
-        run: type .\src\Plugin\version.txt >> $GITHUB_OUTPUT
+        run: |
+            set /p VER=<.\src\Plugin\version.txt
+            echo ("FILE_VERSION=" + %VER%) >> $GITHUB_ENV
 
       - name: Set version as environment variable
-        run: echo ("VERSION=" + ${{steps.file-version.outputs}} + "." + $env:GITHUB_RUN_NUMBER) >> $GITHUB_ENV
+        run: echo ("VERSION=" + $env:FILE_VERSION + "." + $env:GITHUB_RUN_NUMBER) >> $GITHUB_ENV
         
       - name: Echo version number
         run: echo $env:VERSION
