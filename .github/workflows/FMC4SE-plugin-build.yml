@@ -25,8 +25,12 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
         
       - name: Read VERSION file
-        run: |
+        uses: Amadevus/pwsh-script@v2
+        id: script
+        with:
+          script: |
             $ver = get-content .\src\Plugin\version.txt
+            echo $ver
             echo ("FILE_VERSION=" + $ver) >> $GITHUB_ENV
 
       - name: Set version as environment variable
