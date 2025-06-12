@@ -69,4 +69,4 @@ jobs:
 
       - name: Build Solution
         run: |
-          msbuild.exe /p:configuration=Release /p:Version=${{env.VERSION}} ${{SOLUTION_NAME}}
+          msbuild.exe /p:configuration=Release /p:Version=${{env.VERSION}} ${{env.SOLUTION_NAME}}
