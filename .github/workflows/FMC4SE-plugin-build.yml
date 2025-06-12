@@ -23,12 +23,9 @@ jobs:
 
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.0.5
-
-      - name: Navigate to Workspace
-        run: cd ./src/Plugin/
         
       - name: Read VERSION file
-        run: set /p FILE_VERSION_OUT=<version.txt
+        run: set /p FILE_VERSION_OUT=<src/Plugin/version.txt
 
       - name: Set version as environment variable
         run: echo ("VERSION=" + $env:FILE_VERSION_OUT + "." + $env:GITHUB_RUN_NUMBER) >> $GITHUB_ENV
@@ -65,8 +62,8 @@ jobs:
             }
 
       - name: Restore Packages
-        run: nuget restore ${env:SOLUTION_NAME}
+        run: nuget restore ./src/Plugin/${env:SOLUTION_NAME}
 
       - name: Build Solution
         run: |
-          msbuild.exe /p:configuration=Release /p:Version=${{env.VERSION}} ${{env.SOLUTION_NAME}}
+          msbuild.exe /p:configuration=Release /p:Version=${{env.VERSION}} ./src/Plugin/${{env.SOLUTION_NAME}}
