@@ -70,5 +70,20 @@ jobs:
         run: nuget restore ./src/Plugin/${env:SOLUTION_NAME}
 
       - name: Build Solution
+        run: msbuild.exe /p:configuration=Release /p:platform='Any CPU' /p:installerFileVersion=${{env.VERSION}} .\src\Plugin\${{env.SOLUTION_NAME}}
+
+      - name: Rename MSI file and copy results to output directory
+        shell: pwsh
         run: |
-          msbuild.exe /p:configuration=Release /p:platform='Any CPU' /p:installerFileVersion=${{env.VERSION}} .\src\Plugin\${{env.SOLUTION_NAME}}
+            mkdir output
+            cd src\Plugin\Setup\bin\Release
+            ren FMC4SE-Plugin-Setup.msi FMC4SE-Plugin-Setup_${{env.VERSION}}.msi
+            cd $env:GITHUB_WORKSPACE
+            xcopy /y .\src\Plugin\Setup\bin\Release\*.msi output\
+            
+      - name: Upload FMC4SE Plugin artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FMC4SE-Plugin-Setup_${{env.VERSION}}
+          path: output\*.msi
+         
