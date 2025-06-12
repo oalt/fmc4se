@@ -25,10 +25,9 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
         
       - name: Read VERSION file
-        id: file-version
         run: |
-            set /p VER=<.\src\Plugin\version.txt
-            echo ("FILE_VERSION=" + %VER%) >> $GITHUB_ENV
+            $ver = get-content .\src\Plugin\version.txt
+            echo ("FILE_VERSION=" + $ver) >> $GITHUB_ENV
 
       - name: Set version as environment variable
         run: echo ("VERSION=" + $env:FILE_VERSION + "." + $env:GITHUB_RUN_NUMBER) >> $GITHUB_ENV
